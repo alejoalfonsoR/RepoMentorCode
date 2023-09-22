@@ -16,12 +16,17 @@
     padding: 0;
     text-decoration: none;
 }
-
+h1{
+    text-align: center;
+    margin-top: 5.6rem;
+    margin-bottom: 3.6rem;
+    letter-spacing: -1.28px;
+    font-size: 4rem;
+}
 .mision{
     display: flex;
     height: 36.25rem;
     background-color: var(--grisclaro);
-    /*padding-top 6.5rem;*/
     justify-content: space-around;
     align-items: center;
     margin-bottom: 1.25rem;
