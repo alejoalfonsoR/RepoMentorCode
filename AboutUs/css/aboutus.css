@@ -1,0 +1,50 @@
+/*Definición de la paleta de colores*/
+:root {
+    --azuloscuro: #0D2B4B;
+    --azulmedio: #35BDCA;
+    --azulclaro: #EDF2F7;
+    --grisoscuro: #444444;
+    --grismedio: #C5C5C5;
+    --grisclaro: #FCFCFD;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.mision{
+    display: flex;
+    height: 36.25rem;
+    background-color: var(--grisclaro);
+    /*padding-top 6.5rem;*/
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    height: 40vw;
+    gap: 8rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.mision_img{
+    width: 40%;
+    border-radius: 15px;
+    height: 44%;
+    border-width: 2px;
+}
+
+.mision_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20rem;
+    width: 50%;
+    gap:2.5rem;
+    text-align: justify;
+}
