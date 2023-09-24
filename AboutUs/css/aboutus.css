@@ -25,7 +25,6 @@ h1{
 }
 .mision{
     display: flex;
-    height: 36.25rem;
     background-color: var(--grisclaro);
     justify-content: space-around;
     align-items: center;
@@ -38,9 +37,8 @@ h1{
 
 .mision_img{
     width: 40%;
-    border-radius: 15px;
     height: 44%;
-    border-width: 2px;
+    border-radius: 20px;
 }
 
 .mision_texto{
@@ -52,4 +50,41 @@ h1{
     width: 50%;
     gap:2.5rem;
     text-align: justify;
+}
+
+@media (max-width:992px){
+    h1{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        letter-spacing: -1.28px;
+        font-size: 2rem;
+    }
+    .mision{
+        padding-left: 3rem;
+        padding-right: 3rem; 
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        gap: 1rem;
+        height: 85vw;
+        margin-bottom: 1rem;
+    }
+
+    .mision_img{
+        margin-top: 1rem;
+        width: 40%;
+        height: 34%;
+    }
+    .mision_texto{
+        align-items: center;
+        height: 50%;
+        width: 90%;
+        gap:1rem;
+        text-align: justify;
+        font-size: 0.6rem;
+    }
+    .revertir{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
