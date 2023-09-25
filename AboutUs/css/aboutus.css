@@ -220,8 +220,15 @@ textarea {
 
 .piePagina {
     width: 100%;
+    padding: 1% 0;
     background-color: var(--grismedio);
-    text-decoration: none;
+    justify-content: space-around;
+    display: flex;
+}
+
+.piePagina h2 {
+    color: var(--azuloscuro);
+    font-weight: bold;
 }
 
 .piePagina .infoPiePagina {
@@ -229,9 +236,9 @@ textarea {
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
+    padding: 45px auto;
 }
 
 .piePagina .infoPiePagina h2 {
@@ -244,21 +251,20 @@ textarea {
 }
 
 .piePagina .infoPiePagina .pconocenos a {
-    text-decoration: none;
-    color: var(--titulo2);
+    color: var(--grisoscuro);
 }
 
 .piePagina .infoPiePagina .psocial a {
     display: inline-block;
-    color: var(--titulo2);
-    margin-right: 70px;
+    color: var(--azuloscuro);
+    padding: 0 2vh;
     line-height: 45px;
     font-size: 40px;
 }
 
 .piePagina .infoPiePagina .pcontactanos i {
     display: inline-block;
-    margin-right: 30px;
+    padding: 0 1vh;
 }
 
 .piePagina .infoPiePagina .pcontactanos p {
