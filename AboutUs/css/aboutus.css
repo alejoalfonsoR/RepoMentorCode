@@ -59,12 +59,12 @@ h1 {
 /* -------------------- CSS Alejo------------------- */
 
 .equipo {
-    margin: 1rem 10rem;
+    margin: 1rem 5%;
 }
 
 .equipo__titulo {
     color: #363940;
-    margin: 1.69rem 10.37rem;
+    margin: 1.69rem auto;
     text-align: center;
     font-size: 4rem;
     font-style: normal;
@@ -75,7 +75,7 @@ h1 {
 
 .equipo__titulo__info {
     color: #95a1bb;
-    margin: 2.7rem 4.1rem;
+    margin: 2.7rem auto;
     text-align: center;
     font-size: 1.3rem;
     font-style: normal;
@@ -89,12 +89,14 @@ h1 {
 }
 
 .cards article {
-    margin: 0 1rem;
+    margin: 0.5rem;
+    flex: 1;
+    max-width: calc(33.33% - 1rem);
 }
 
 .cards article img {
-    width: 21rem;
-    height: 22rem;
+    width: 100%;
+    height: 55vh;
     flex-shrink: 0;
 }
 
@@ -118,8 +120,6 @@ h1 {
 }
 
 .cards__info {
-    width: 22rem;
-    height: 10.1rem;
     flex-shrink: 0;
     color: #95a1bb;
     font-size: 1rem;
@@ -129,33 +129,38 @@ h1 {
 }
 
 
-
 /* ---------------------- Fin CSS Alejo -------------------------- */
+
 
 /* ---------------------- NAVBAR -------------------------- */
 
 .navbar-custom {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    }
+}
 
-.logo-navbar{
-width: 27%;}
+.logo-navbar {
+    width: 27%;
+}
 
-.nav-link{
-font-weight: bold;
-color: var(--azuloscuro)!important;
+.nav-link {
+    font-weight: bold;
+    color: var(--azuloscuro)!important;
 }
 
 .icon-person {
-width: 33px
+    width: 33px
 }
 
 .titulo {
     margin-top: 40px;
 }
+
+
 /* ---------------------- NAVBAR -------------------------- */
 
+
 /* ---------------------- FORM -------------------------- */
+
 .container {
     background-color: #EDF2F7;
     padding: 20px;
@@ -195,9 +200,7 @@ textarea {
 textarea {
     resize: vertical;
     height: 150px;
-    
 }
-
 
 .button-submit {
     background-color: #0d2b4b;
@@ -213,9 +216,9 @@ textarea {
 .button-submit:hover {
     background-color: #0056b3;
 }
+
+
 /* ---------------------- FORM -------------------------- */
-
-
 
 @media (max-width: 992px) {
     h1 {
