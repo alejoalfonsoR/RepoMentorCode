@@ -212,6 +212,63 @@ textarea {
 
 /* ---------------------- FORM -------------------------- */
 
+
+/* ----------------------FOOTER -------------------------- */
+
+
+/* Footer */
+
+.piePagina {
+    width: 100%;
+    background-color: var(--grismedio);
+    text-decoration: none;
+}
+
+.piePagina .infoPiePagina {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.piePagina .infoPiePagina h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.piePagina .infoPiePagina p {
+    margin-bottom: 10px;
+}
+
+.piePagina .infoPiePagina .pconocenos a {
+    text-decoration: none;
+    color: var(--titulo2);
+}
+
+.piePagina .infoPiePagina .psocial a {
+    display: inline-block;
+    color: var(--titulo2);
+    margin-right: 70px;
+    line-height: 45px;
+    font-size: 40px;
+}
+
+.piePagina .infoPiePagina .pcontactanos i {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.piePagina .infoPiePagina .pcontactanos p {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+/* -------------------FIN FOOTER -------------------------- */
+
 @media (max-width: 992px) {
     h1 {
         margin-top: 3rem;
