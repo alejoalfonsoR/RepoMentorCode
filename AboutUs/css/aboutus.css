@@ -165,4 +165,33 @@ cards__info {
         display: flex;
         flex-direction: column-reverse;
     }
+    /* ---------------CSS responsive de la seccion Sobre Nosotros Alejo ------------- */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1rem;
+    }
+    .equipo {
+        margin: 1rem 2rem;
+    }
+    .equipo__titulo {
+        font-size: 3rem;
+        margin: 1rem 2rem;
+    }
+    .equipo__titulo__info {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+    .cards article {
+        max-width: 100%;
+        margin: 0.5rem;
+    }
+    /* -------------------Fin CSS responsive Alejo ---------------------------  */
 }
