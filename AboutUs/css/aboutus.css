@@ -1,29 +1,32 @@
 /*Definición de la paleta de colores*/
+
 :root {
-    --azuloscuro: #0D2B4B;
-    --azulmedio: #35BDCA;
-    --azulclaro: #EDF2F7;
+    --azuloscuro: #0d2b4b;
+    --azulmedio: #35bdca;
+    --azulclaro: #edf2f7;
     --grisoscuro: #444444;
-    --grismedio: #C5C5C5;
-    --grisclaro: #FCFCFD;
+    --grismedio: #c5c5c5;
+    --grisclaro: #fcfcfd;
 }
 
-*{
+* {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 5.6rem;
     margin-bottom: 3.6rem;
     letter-spacing: -1.28px;
     font-size: 4rem;
 }
-.mision{
+
+.mision {
     display: flex;
     background-color: var(--grisclaro);
     justify-content: space-around;
@@ -35,33 +38,109 @@ h1{
     padding-right: 10rem;
 }
 
-.mision_img{
+.mision_img {
     width: 40%;
     height: 44%;
     border-radius: 20px;
 }
 
-.mision_texto{
+.mision_texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     height: 20rem;
     width: 50%;
-    gap:2.5rem;
+    gap: 2.5rem;
     text-align: justify;
 }
 
-@media (max-width:992px){
-    h1{
+
+/* -------------------- CSS Alejo------------------- */
+
+.equipo {
+    margin: 1rem 10rem;
+}
+
+.equipo__titulo {
+    color: #363940;
+    margin: 1.69rem 10.37rem;
+    text-align: center;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.02rem;
+}
+
+.equipo__titulo__info {
+    color: #95a1bb;
+    margin: 2.7rem 4.1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem;
+}
+
+.cards {
+    justify-content: space-around;
+    display: flex;
+}
+
+.cards article {
+    margin: 0 1rem;
+}
+
+.cards article img {
+    width: 21rem;
+    height: 22rem;
+    flex-shrink: 0;
+}
+
+.cards__name {
+    color: #363940;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+}
+
+.cards__rol {
+    color: #95a1bb;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+cards__info {
+    width: 22rem;
+    height: 10.1rem;
+    flex-shrink: 0;
+    color: #95a1bb;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+
+
+/* ---------------------- Fin CSS Alejo -------------------------- */
+
+@media (max-width: 992px) {
+    h1 {
         margin-top: 3rem;
         margin-bottom: 2rem;
         letter-spacing: -1.28px;
         font-size: 2rem;
     }
-    .mision{
+    .mision {
         padding-left: 3rem;
-        padding-right: 3rem; 
+        padding-right: 3rem;
         flex-direction: column;
         width: 100vw;
         justify-content: center;
@@ -69,21 +148,20 @@ h1{
         height: 85vw;
         margin-bottom: 1rem;
     }
-
-    .mision_img{
+    .mision_img {
         margin-top: 1rem;
         width: 40%;
         height: 34%;
     }
-    .mision_texto{
+    .mision_texto {
         align-items: center;
         height: 50%;
         width: 90%;
-        gap:1rem;
+        gap: 1rem;
         text-align: justify;
         font-size: 0.6rem;
     }
-    .revertir{
+    .revertir {
         display: flex;
         flex-direction: column-reverse;
     }
