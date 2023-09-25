@@ -117,7 +117,7 @@ h1 {
     text-transform: uppercase;
 }
 
-cards__info {
+.cards__info {
     width: 22rem;
     height: 10.1rem;
     flex-shrink: 0;
@@ -129,7 +129,93 @@ cards__info {
 }
 
 
+
 /* ---------------------- Fin CSS Alejo -------------------------- */
+
+/* ---------------------- NAVBAR -------------------------- */
+
+.navbar-custom {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    }
+
+.logo-navbar{
+width: 27%;}
+
+.nav-link{
+font-weight: bold;
+color: var(--azuloscuro)!important;
+}
+
+.icon-person {
+width: 33px
+}
+
+.titulo {
+    margin-top: 40px;
+}
+/* ---------------------- NAVBAR -------------------------- */
+
+/* ---------------------- FORM -------------------------- */
+.container {
+    background-color: #EDF2F7;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+}
+
+form ul li {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+    
+}
+
+
+.button-submit {
+    background-color: #0d2b4b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+}
+
+.button-submit:hover {
+    background-color: #0056b3;
+}
+/* ---------------------- FORM -------------------------- */
+
+
 
 @media (max-width: 992px) {
     h1 {
