@@ -85,6 +85,9 @@
     flex: 1;
     max-width: calc(33.33% - 1rem);
 }
+.cards article:hover{
+    transform: scale(1.1);
+}
 
 .cards article img {
     width: 100%;
