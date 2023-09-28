@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/6dc7cbf907.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="img/favicon.svg">
-    
+
 
 </head>
 
@@ -124,29 +124,34 @@
 
     <section id="formulario" class="container">
         <div class="container">
-            <form id="formularioContacto" action="">
+            <form action="https://formsubmit.co/mentorcodeapp@gmail.com" method="POST" id="formularioContacto">
                 <h2 class="text-center mb-4">Contacta a nuestro equipo</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name" required autofocus>
+                            <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre" required autofocus>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="lastName">Apellido</label>
-                            <input type="text" class="form-control" id="lastName" required>
+                            <input type="text" class="form-control" id="lastName" name="apellido" placeholder="Apellido" required>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="315 111 11 11" required>
+                </div>
+                <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <p id="mensaje"></p>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Déjanos un mensaje</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                    <textarea class="form-control" id="message" rows="4" name="mensaje" placeholder="Dejanos tu mensaje ..." required></textarea>
                 </div>
                 <div class="text-center">
                     <button type="submit" class="button-submit">Enviar</button>
