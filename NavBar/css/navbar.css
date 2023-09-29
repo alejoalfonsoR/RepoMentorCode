@@ -1,0 +1,46 @@
+/*Definición de la paleta de colores*/
+
+:root {
+    --azuloscuro: #0d2b4b;
+    --azulmedio: #35bdca;
+    --azulclaro: #edf2f7;
+    --grisoscuro: #444444;
+    --grismedio: #c5c5c5;
+    --grisclaro: #fcfcfd;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+/* ---------------------- NAVBAR -------------------------- */
+
+.navbar-custom {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-navbar {
+    width: 27%;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: var(--azuloscuro)!important;
+}
+
+.icon-person {
+    width: 33px
+}
+
+.titulo {
+    margin-top: 40px;
+}
+
+
+/* ---------------------- NAVBAR -------------------------- */
