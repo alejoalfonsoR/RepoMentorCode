@@ -19,8 +19,6 @@
 }
 
 
-
-
 /* ---------------------- NAVBAR -------------------------- */
 
 .navbar-custom {
@@ -47,7 +45,9 @@
 
 /* ---------------------- NAVBAR -------------------------- */
 
+
 /*Inicio Body*/
+
 .equipo__titulo {
     color: var(--azuloscuro);
     margin: 2rem auto;
@@ -63,21 +63,21 @@
 
 .cards {
     justify-content: space-between;
-    display: flex;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
     width: 77.5vw;
     margin-left: 10.3vw;
 }
 
-
-
 .cards article {
     margin: 0.5rem;
     flex: 1;
-    max-width: calc(33.33% - 1rem);
     border: var(--grismedio) 0.5px solid;
     border-radius: 20px;
 }
-.cards article:hover{
+
+.cards article:hover {
     transform: scale(1.1);
 }
 
@@ -94,7 +94,7 @@
     font-size: 1rem;
     font-style: normal;
     font-weight: bolder;
-    line-height: 0.5rem; 
+    line-height: 0.5rem;
     padding-left: 0.6rem;
 }
 
@@ -107,6 +107,7 @@
     line-height: 2.2rem;
     padding-left: 0.6rem;
 }
+
 
 /* Footer */
 
