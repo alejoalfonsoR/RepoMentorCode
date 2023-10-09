@@ -5,7 +5,7 @@ const listaMentores = [];
 // const formularioMentores = document.querySelector('#formularioMentores');
 
 function formularioMentores(){
-    const nombre = document.querySelector('#name').value
+    const name = document.querySelector('#name').value
     const telefono = document.querySelector('#telefono').value
     const email = document.querySelector('#email').value
     const specialty = document.querySelector('#specialty').value
@@ -17,7 +17,7 @@ function formularioMentores(){
         //     return;
         // }
         const formularioMentores1 = {
-            nombre : nombre,
+            name : name,
             telefono : telefono,
             email : email,
             specialty : specialty,
@@ -26,10 +26,11 @@ function formularioMentores(){
         }
         console.log(formularioMentores1)
         listaMentores.push(formularioMentores1);
-        alert(`Tu mensaje se envió con éxito`)
+        // alert(`Tu mensaje se envió con éxito`)
         // const Mensajes = JSON.parse(localStorage.getItem('mensajes')) || [];
         // listaMentores.push({ nombre: nombre, telefono: telefono, email: email, specialty: specialty, photo: photo, price: price });
         // localStorage.setItem('mensajes', JSON.stringify(Mensajes));
+        Tarjetas();
         limpiarCampos();
     }
     
@@ -43,4 +44,27 @@ function formularioMentores(){
         
     }
 
+    function Tarjetas(){
+        const contenedorTarjetas = document.getElementById("tarjetaMentores");
+        contenedorTarjetas.innerHTML = "";
+        const grupoTarjetas = listaMentores.map((item) => {
+            const card = document.createElement("div");
+            card.innerHTML = `
+            <article>
+            <a href="#"><img src="${item.photo}"/></a>
+            <p>${item.name}</p>
+            <p>${item.specialty}</p>
+            <h3 class="cards__info">
+            $ <span>${item.price}</span>
+            </h3>
+            </article>`;
+            return card;
+        });
+        grupoTarjetas.forEach((tarjeta) => {
+            console.log(tarjeta)
+            contenedorTarjetas.appendChild(tarjeta);
+            
+        });
+    }
+    
     
