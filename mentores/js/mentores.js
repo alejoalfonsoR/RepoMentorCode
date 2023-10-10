@@ -78,13 +78,19 @@ function mapeoTarjetas() {
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `
-        <img src="${item.photo}"/>
-        <h2>${item.name}</h2>
-        <p>${item.specialty}</p>
-        <p>${item.price}</p>`;
-
+        <article>
+        <a href="#"><img src="${item.photo}"/></a>
+        <p>${item.name}</p>
+        <p>${item.price}</p>
+        <h3 class="cards__info">
+          ${item.price}  $ <span></span>
+        </h3>
+        </article>
+    `
         return card;
+    
     });
+
     grupoTarjetas.forEach((tarjeta) => {
         contenedorTarjetas.appendChild(tarjeta);
     });

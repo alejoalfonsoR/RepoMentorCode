@@ -1,0 +1,117 @@
+/*Definición de la paleta de colores*/
+
+:root {
+    --azuloscuro: #0d2b4b;
+    --azulmedio: #35bdca;
+    --azulclaro: #edf2f7;
+    --grisoscuro: #444444;
+    --grismedio: #c5c5c5;
+    --grisclaro: #fcfcfd;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+
+/* ---------------------- NAVBAR -------------------------- */
+
+.navbar-custom {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-navbar {
+    width: 27%;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: var(--azuloscuro)!important;
+}
+
+.icon-person {
+    width: 33px
+}
+
+.titulo {
+    margin-top: 40px;
+}
+
+
+/* ---------------------- NAVBAR -------------------------- */
+
+/*dividir pantalla*/
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+/*dividir pantalla*/
+
+/* Footer */
+
+.piePagina {
+    width: 100%;
+    padding: 1% 0;
+    background-color: var(--grismedio);
+    justify-content: space-around;
+    display: flex;
+}
+
+.piePagina h2 {
+    color: var(--azuloscuro);
+    font-weight: bold;
+}
+
+.piePagina .infoPiePagina {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 45px auto;
+}
+
+.piePagina .infoPiePagina h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.piePagina .infoPiePagina p {
+    margin-bottom: 10px;
+}
+
+.piePagina .infoPiePagina .pconocenos a {
+    color: var(--grisoscuro);
+}
+
+.piePagina .infoPiePagina .psocial a {
+    display: inline-block;
+    color: var(--azuloscuro);
+    padding: 0 2vh;
+    line-height: 45px;
+    font-size: 40px;
+}
+
+.piePagina .infoPiePagina .pcontactanos i {
+    display: inline-block;
+    padding: 0 1vh;
+}
+
+.piePagina .infoPiePagina .pcontactanos p {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+/* -------------------FIN FOOTER -------------------------- */
