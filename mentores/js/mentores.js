@@ -68,7 +68,6 @@ const listaMentores = [{
         specialty: "RESTful APIs",
         price: 150000,
     },
-
 ];
 
 function mapeoTarjetas() {
@@ -76,17 +75,16 @@ function mapeoTarjetas() {
 
     const grupoTarjetas = listaMentores.map((item) => {
         const card = document.createElement("div");
-        card.classList.add("card");
         card.innerHTML = `
         <article>
         <a href="#"><img src="${item.photo}"/></a>
         <p>${item.name}</p>
-        <p>${item.price}</p>
+        <p>${item.specialty}</p>
         <h3 class="cards__info">
-          ${item.price}  $ <span></span>
+        $ <span>${item.price}</span>
         </h3>
-        </article>
-    `
+        </article>`;
+
         return card;
     
     });
