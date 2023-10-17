@@ -145,7 +145,12 @@ ul {
 
 /* -------------------FIN FOOTER -------------------------- */
 
-
+.foro-discord {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0d2b4b;
+}
 /* -------------------Responsive Footer Diego ---------------------------  */
 
 @media(max-width:767px) {
