@@ -54,39 +54,42 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
+}
 
-    .bienvenida-registro {
-        background-color: var(--azulmedio);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    .bienvenida-registro h1{
-        font-size: 2.5rem;
-        font-weight: bold;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        text-align: center;
-        margin-top: 26vh;
-    }
-    
-    .bienvenida-registro p{
-        width: 58.5%;
-        text-align: center;
-        margin-top: 5vh;
-        font-size: 1.125rem;
-        font-weight: 400;
-    }
-    
-    .bienvenida-registro img{
-        margin-top: 15vh;
-        width: 25vw;
-    }
-    .desaparece-pc{
-        display: none;
-    }
+.bienvenida-registro {
+    background-color: var(--azulmedio);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bienvenida-registro h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-top: 26vh;
+}
+
+.bienvenida-registro p {
+    width: 58.5%;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.bienvenida-registro img {
+    margin-top: 15vh;
+    width: 25vw;
+}
+
+.desaparece-pc {
+    display: none;
+}
+
+
 /*dividir pantalla*/
 
 
@@ -138,7 +141,8 @@ textarea {
     background-color: #0d2b4b;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 0.5rem 0;
+    text-align: center;
     border-radius: 16px;
     cursor: pointer;
     font-size: 16px;
@@ -154,39 +158,42 @@ textarea {
 
 
 /* ----------------------FOOTER -------------------------- */
-.piePaginaContainer{
+
+.piePaginaContainer {
     max-width: 1570px;
     background-color: var(--azulosuro);
     margin: auto;
 }
-.row{
-    display:flex;
+
+.row {
+    display: flex;
     flex-wrap: wrap;
 }
 
-ul{
+ul {
     list-style: none;
-
 }
 
 .piePagina {
     background-color: var(--azuloscuro);
     padding: 80px 0;
 }
-.footer-section{
+
+.footer-section {
     width: 25%;
     padding: 0 30px;
 }
-.footer-section h4{
+
+.footer-section h4 {
     font-size: 20px;
     color: var(--grisclaro);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
-
 }
-.footer-section h4::before{
+
+.footer-section h4::before {
     content: '';
     position: absolute;
     left: 0;
@@ -196,32 +203,38 @@ ul{
     box-sizing: border-box;
     width: 50px;
 }
-.footer-section ul li:not(:last-child){
+
+.footer-section ul li:not(:last-child) {
     margin-bottom: 10px;
 }
-.footer-section ul p{
+
+.footer-section ul p {
     font-size: 16px;
     text-decoration: none;
     font-weight: 300;
     color: #bbbbbb;
     display: block;
 }
-.footer-section ul p:hover{
+
+.footer-section ul p:hover {
     color: #ffffff;
     padding-left: 8px;
 }
-.footer-section ul li a{
+
+.footer-section ul li a {
     font-size: 16px;
     text-decoration: none;
     font-weight: 300;
     color: #bbbbbb;
     display: block;
 }
-.footer-section ul li a:hover{
+
+.footer-section ul li a:hover {
     color: #ffffff;
     padding-left: 8px;
 }
-.footer-section .social-links a{
+
+.footer-section .social-links a {
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -234,22 +247,23 @@ ul{
     transition: all 0.5s ease;
     font-size: 30px;
 }
-.footer-section .social-links a:hover{
+
+.footer-section .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
 }
+
+
 /* -------------------FIN FOOTER -------------------------- */
 
-
-@media(max-width:767px){
+@media(max-width:767px) {
     /* -------------------Responsive main Caro ---------------------------  */
-    .contenedor-principal{
+    .contenedor-principal {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 1rem;
-
     }
     .bienvenida-registro {
         background-color: white;
@@ -257,48 +271,45 @@ ul{
         padding-bottom: 0;
         margin-bottom: 0;
     }
-    .bienvenida-registro h1{
+    .bienvenida-registro h1 {
         width: 70vw;
         margin-top: 20vh;
         font-size: 2rem;
     }
-    
-    .bienvenida-registro p{
+    .bienvenida-registro p {
         margin-top: 2vh;
         width: 70vw;
     }
-    
-    .bienvenida-registro img{
+    .bienvenida-registro img {
         margin-top: 0.5vh;
         width: 10vw;
     }
-    .container{
+    .container {
         padding-top: 5vh;
         background-color: var(--azulmedio);
         border-radius: 30px;
         margin: 2vh 10vw;
     }
-    .desaparece-pc{
+    .desaparece-pc {
         display: flex;
     }
-
-    .desaparece{
+    .desaparece {
         display: none;
     }
     /* -------------------Fin Responsive main Caro ---------------------------  */
-
     /* -------------------Responsive Footer Diego ---------------------------  */
     .footer-section {
-        width:50%;
+        width: 50%;
         margin: bottom 30px;
         padding: 30px;
     }
     /* -------------------Fin Responsive Footer Diego ---------------------------  */
 }
-@media(max-width:574px){
+
+@media(max-width:574px) {
     /* -------------------Responsive Footer Diego ---------------------------  */
     .footer-section {
-        width:100%;
+        width: 100%;
     }
     /* -------------------Fin Responsive Footer Diego ---------------------------  */
 }
