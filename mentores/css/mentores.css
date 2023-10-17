@@ -50,7 +50,7 @@
 
 .equipo__titulo {
     color: var(--azuloscuro);
-    margin: 2rem auto;
+    margin: 3rem auto 1rem;
     text-align: left;
     font-size: 2rem;
     font-style: normal;
@@ -64,10 +64,11 @@
 .cards {
     justify-content: space-between;
     display: grid;
-    gap: 5px;
+    gap: 2%;
     grid-template-columns: repeat(4, 1fr);
-    width: 77.5vw;
-    margin-left: 10.3vw;
+    width: 70vw;
+    height: 100%;
+    margin: 1rem auto 6rem;
 }
 
 .cards article {
@@ -101,7 +102,7 @@
 .cards h3 {
     flex-shrink: 0;
     color: var(--azuloscuro);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 600;
     line-height: 2.2rem;

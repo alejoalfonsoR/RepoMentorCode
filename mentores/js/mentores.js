@@ -81,12 +81,15 @@ function mapeoTarjetas() {
         <p>${item.name}</p>
         <p>${item.specialty}</p>
         <h3 class="cards__info">
-        $ <span>${item.price}</span>
+            $ <span>${item.price.toLocaleString("es-ES", {
+              style: "currency",
+              currency: "COP",
+              maximumFractionDigits: 0
+            })}</span>
         </h3>
-        </article>`;
+    </article>`;
 
         return card;
-    
     });
 
     grupoTarjetas.forEach((tarjeta) => {
