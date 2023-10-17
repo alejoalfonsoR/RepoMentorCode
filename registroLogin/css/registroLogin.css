@@ -19,8 +19,6 @@
 }
 
 
-
-
 /* ---------------------- NAVBAR -------------------------- */
 
 .navbar-custom {
@@ -45,17 +43,84 @@
 }
 
 
-/* ---------------------- NAVBAR -------------------------- */
+/* ---------------------- Fin NAVBAR -------------------------- */
+
 
 /*dividir pantalla*/
+
 .contenedor-principal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
+}
+
+
 /*dividir pantalla*/
+
+
+/* ---------------------- FORM -------------------------- */
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+}
+
+form ul li {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.button-submit {
+    background-color: #0d2b4b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+}
+
+.button-submit:hover {
+    background-color: #0056b3;
+}
+
+
+/* ----------------------  FIN DEL FORM -------------------------- */
+
 
 /* Footer */
 

@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top navbar-custom">
             <a class="navbar-brand" href="#"><img src="./img/logoMentorCode.svg" class="logo-navbar" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
@@ -57,7 +57,7 @@
     </header>
 
     <div>
-        <h1 class="equipo__titulo">Nosotros</h1>
+        <h1 class="titulo__nosotros">Nosotros</h1>
     </div>
     <section class="mision">
         <img class="mision_img" src="img/mision.jpg" />
@@ -86,7 +86,7 @@
         <p class="equipo__titulo__info">Conoce a nuestros profesionales</p>
         <div class="cards cards-container">
             <article>
-                <a href="https://www.linkedin.com/in/alejandro-alfonso-desarrollador/"><img src="img/FotoAlejandro.jpg" alt="Foto integrante del equipo " /></a>
+                <a href="https://www.linkedin.com/in/alejandro-alfonso-desarrollador/"><img src="img/Alejandro Alfonso Desarrollador FullStack Java.png" alt="Foto integrante del equipo " /></a>
                 <p class="cards__name">Alejandro Alfonso</p>
                 <p class="cards__rol">Desarrollador FrontEnd</p>
                 <p class="cards__info">
@@ -106,7 +106,7 @@
                 <p class="cards__name">Diego Alvarado</p>
                 <p class="cards__rol">Desarrollador BackEnd</p>
                 <p class="cards__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Especialista en JAVA
                 </p>
             </article>
             <article>
@@ -114,7 +114,7 @@
                 <p class="cards__name">Joselin Lozada</p>
                 <p class="cards__rol">Desarrolladora BackEnd</p>
                 <p class="cards__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Especialista en JAVA
                 </p>
             </article>
         </div>
@@ -126,30 +126,30 @@
         <div class="container">
             <form action="https://formsubmit.co/mentorcodeapp@gmail.com" method="POST" id="formularioContacto">
                 <h2 class="text-center mb-4">Contacta a nuestro equipo</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="lastName">Apellido</label>
-                            <input type="text" class="form-control" id="lastName" name="apellido" placeholder="Apellido" required>
-                        </div>
+
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="name">Nombres</label>
+                        <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombres" required>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="lastName">Apellidos</label>
+                        <input type="text" class="form-control" id="lastName" name="apellido" placeholder="Apellidos" required>
+                    </div>
+                </div>
+
+                <div class="form-group col-12">
                     <label for="phone">Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="315 111 11 11" required>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-12">
                     <label for="email">Email</label>
                     <p id="mensaje"></p>
                     <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-12">
                     <label for="message">Déjanos un mensaje</label>
                     <textarea class="form-control" id="message" rows="4" name="mensaje" placeholder="Dejanos tu mensaje ..." required></textarea>
                 </div>
