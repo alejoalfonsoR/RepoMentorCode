@@ -109,6 +109,52 @@
     padding-left: 0.6rem;
 }
 
+.center {
+    text-align: center;
+}
+
+.button-cart {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/icons8-cart-32.png');
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    display: inline-block;
+}
+/* Modal de nuestros mentores */
+.modal {
+    max-width: 80%; 
+    margin: auto; 
+}
+
+#mentorPhoto {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 30px 30px 30px 30px;
+    padding-bottom: 1.3rem;
+}
+
+.modal-body h3 {
+    flex-shrink: 0;
+    color: var(--azuloscuro);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem}
+
+.modal-title {
+    color: var(--azuloscuro);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem  
+}
+
+/* Modal de nuestros mentores */
+
 
 /* ----------------------FOOTER -------------------------- */
 .piePaginaContainer{
