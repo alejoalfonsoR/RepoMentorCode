@@ -86,6 +86,7 @@
     margin-top: 15%;
     width: 25vw;
 }
+
 .desaparece-pc {
     display: none;
 }
@@ -177,7 +178,7 @@ ul {
 
 .piePagina {
     background-color: var(--azuloscuro);
-    padding: 80px 0;
+    padding: 1rem 0;
 }
 
 .footer-section {
@@ -261,49 +262,49 @@ ul {
 /* -------------------Responsive Footer Diego ---------------------------  */
 
 @media(max-width:767px) {
-        /* -------------------Responsive main Caro ---------------------------  */
-        .contenedor-principal {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-        }
-        .bienvenida-registro {
-            background-color: white;
-            color: var(--azuloscuro);
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-        .bienvenida-registro h1 {
-            width: 70vw;
-            margin-top: 20vh;
-            font-size: 2rem;
-        }
-        .bienvenida-registro p {
-            margin-top: 2vh;
-            width: 70vw;
-        }
-        .bienvenida-registro img {
-            margin-top: 0.5vh;
-            width: 10vw;
-        }
-        .container {
-            padding-top: 5vh;
-            background-color: var(--azulmedio);
-            border-radius: 30px;
-            margin: 2vh 10vw;
-        }
-        .desaparece-pc {
-            display: flex;
-        }
-        .desaparece {
-            display: none;
-        }
-        .button-submit {
-            width: 60%;
-        }
-        /* -------------------Fin Responsive main Caro ---------------------------  */
+    /* -------------------Responsive main Caro ---------------------------  */
+    .contenedor-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .bienvenida-registro {
+        background-color: white;
+        color: var(--azuloscuro);
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .bienvenida-registro h1 {
+        width: 70vw;
+        margin-top: 20vh;
+        font-size: 2rem;
+    }
+    .bienvenida-registro p {
+        margin-top: 2vh;
+        width: 70vw;
+    }
+    .bienvenida-registro img {
+        margin-top: 0.5vh;
+        width: 10vw;
+    }
+    .container {
+        padding-top: 5vh;
+        background-color: var(--azulmedio);
+        border-radius: 30px;
+        margin: 2vh 10vw;
+    }
+    .desaparece-pc {
+        display: flex;
+    }
+    .desaparece {
+        display: none;
+    }
+    .button-submit {
+        width: 60%;
+    }
+    /* -------------------Fin Responsive main Caro ---------------------------  */
     /* -------------------Responsive Footer Diego ---------------------------  */
     .footer-section {
         width: 50%;
