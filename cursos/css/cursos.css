@@ -50,61 +50,104 @@
 
 
 
-/* Footer */
+/* ----------------------FOOTER -------------------------- */
+.piePaginaContainer{
+    max-width: 1570px;
+    background-color: var(--azulosuro);
+    margin: auto;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+
+}
 
 .piePagina {
-    width: 100%;
-    padding: 1% 0;
-    background-color: var(--grismedio);
-    justify-content: space-around;
-    display: flex;
+    background-color: var(--azuloscuro);
+    padding: 80px 0;
 }
-
-.piePagina h2 {
-    color: var(--azuloscuro);
-    font-weight: bold;
+.footer-section{
+    width: 25%;
+    padding: 0 30px;
 }
+.footer-section h4{
+    font-size: 20px;
+    color: var(--grisclaro);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
 
-.piePagina .infoPiePagina {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-    padding: 45px auto;
 }
-
-.piePagina .infoPiePagina h2 {
-    margin-bottom: 25px;
-    font-size: 25px;
+.footer-section h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--azulmedio);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
-
-.piePagina .infoPiePagina p {
+.footer-section ul li:not(:last-child){
     margin-bottom: 10px;
 }
-
-.piePagina .infoPiePagina .pconocenos a {
-    color: var(--grisoscuro);
+.footer-section ul p{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
 }
-
-.piePagina .infoPiePagina .psocial a {
+.footer-section ul p:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-section ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+.footer-section ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-section .social-links a{
     display: inline-block;
-    color: var(--azuloscuro);
-    padding: 0 2vh;
-    line-height: 45px;
-    font-size: 40px;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    font-size: 30px;
 }
-
-.piePagina .infoPiePagina .pcontactanos i {
-    display: inline-block;
-    padding: 0 1vh;
+.footer-section .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
 }
-
-.piePagina .infoPiePagina .pcontactanos p {
-    margin-left: 10px;
-    font-size: 18px;
-}
-
-
 /* -------------------FIN FOOTER -------------------------- */
+
+     /* -------------------Responsive Footer Diego ---------------------------  */
+     @media(max-width:767px){
+        .footer-section {
+            width:50%;
+            margin: bottom 30px;
+            padding: 30px;
+        }
+    }
+    @media(max-width:574px){
+        .footer-section {
+            width:100%;
+        }
+    }
+     /* -------------------Fin Responsive Footer Diego ---------------------------  */

@@ -379,9 +379,10 @@ ul{
         max-width: 100%;
         margin: 0.5rem;
     }
+}
     /* -------------------Fin CSS responsive Alejo ---------------------------  */
     
-     /* -------------------Responsive Footer Diego ---------------------------  */
+ /* -------------------Responsive Footer Diego ---------------------------  */
      @media(max-width:767px){
         .footer-section {
             width:50%;
@@ -395,4 +396,3 @@ ul{
         }
     }
      /* -------------------Fin Responsive Footer Diego ---------------------------  */
-}
