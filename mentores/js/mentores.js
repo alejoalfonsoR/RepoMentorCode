@@ -4,6 +4,7 @@ const listaMentores = [{
         name: "Elena García",
         linkedin: "www.linkedin.com/in/joselin-lozada/",
         specialty: "HTML5",
+        duration: "1-2 horas",
         description: "Especialista con 3 años de experiencia en HTML5",
         price: 50000,
     },
