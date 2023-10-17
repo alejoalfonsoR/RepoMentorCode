@@ -123,6 +123,7 @@ function mapeoTarjetas() {
             </article>`;
 
         card.querySelector("a").addEventListener("click", (event) => {
+            event.preventDefault
             const mentorId = event.target.getAttribute("data-mentor-id");
             const mentor = listaMentores.find((m) => m.id === parseInt(mentorId));
 
