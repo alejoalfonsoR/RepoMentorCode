@@ -45,6 +45,26 @@
 
 /* ---------------------- NAVBAR -------------------------- */
 
+/* ---------------------- MAIN -------------------------- */
+.inicio-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.primera{
+    width: 100vw;
+    margin-top: 3rem;
+}
+.segunda{
+    width: 75vw;
+}
+
+.tercera{
+    margin-bottom: 5rem;
+    width: 75vw;
+}
+/* ---------------------- MAIN -------------------------- */
 
 /* ----------------------FOOTER -------------------------- */
 

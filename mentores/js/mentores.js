@@ -152,3 +152,7 @@ function mapeoTarjetas() {
 }
 
 document.addEventListener("DOMContentLoaded", mapeoTarjetas);
+
+//Cerrar la ventana modal dando click en cualquier parte
+var modal = document.getElementById('mentorModal');
+

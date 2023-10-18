@@ -55,6 +55,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: auto;
+    margin-top: 5rem;
 }
 
 .bienvenida-registro {
@@ -62,8 +63,9 @@
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content:space-around;
     align-items: center;
-    padding: 2rem;
+    padding: 10rem 2rem;
 }
 
 .bienvenida-registro h1 {
@@ -71,14 +73,13 @@
     font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
-    margin-top: 26%;
 }
 
 .bienvenida-registro p {
     width: 58.5%;
     text-align: center;
-    margin-top: 5%;
-    font-size: 1.125rem;
+    margin-top: 15%;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
@@ -269,6 +270,7 @@ ul {
         justify-content: center;
         align-items: center;
         padding: 1rem;
+        margin-top: 0;
     }
     .bienvenida-registro {
         background-color: white;
@@ -278,7 +280,6 @@ ul {
     }
     .bienvenida-registro h1 {
         width: 70vw;
-        margin-top: 20vh;
         font-size: 2rem;
     }
     .bienvenida-registro p {
