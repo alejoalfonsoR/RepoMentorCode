@@ -46,6 +46,133 @@
 /* ---------------------- NAVBAR -------------------------- */
 
 
+/*Inicio Body*/
+
+.equipo__titulo {
+    color: var(--azuloscuro);
+    margin: 3rem auto 1rem;
+    text-align: left;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.02rem;
+    padding-left: 11vw;
+    padding-top: 3rem;
+}
+
+.cards {
+    justify-content: space-between;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70vw;
+    height: 100%;
+    margin: 1rem auto 6rem;
+}
+
+.cards article {
+    margin: 0.5rem;
+    flex: 1;
+    border: var(--grismedio) 0.5px solid;
+    border-radius: 20px;
+}
+
+.cards article:hover {
+    transform: scale(1.1);
+}
+
+.cards article img {
+    object-fit: cover;
+    width: 100%;
+    height: 35vh;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    padding-bottom: 1.3rem;
+}
+
+.cards p {
+    color: var(--azuloscuro);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 0.5rem;
+    padding-left: 0.6rem;
+}
+
+.cards h3 {
+    flex-shrink: 0;
+    color: var(--azuloscuro);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem;
+    padding-left: 0.6rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.button-cart {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/icons8-cart-32.png');
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    display: inline-block;
+}
+
+
+/* Modal de nuestros mentores */
+
+.modal {
+    max-width: 80%;
+    margin: auto;
+}
+
+#mentorPhoto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding-bottom: 1.3rem;
+}
+
+#mentorModal {
+    overflow: hidden;
+}
+
+.modal-body {
+    overflow: hidden;
+    max-height: 80vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.modal-body h3 {
+    flex-shrink: 0;
+    color: var(--azuloscuro);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem
+}
+
+.modal-title {
+    color: var(--azuloscuro);
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem
+}
+
+
+/* Modal de nuestros mentores */
+
+
 /* ----------------------FOOTER -------------------------- */
 
 .piePaginaContainer {
