@@ -55,6 +55,7 @@
 }
 
 .row {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -152,6 +153,8 @@ ul {
     color: #0d2b4b;
     margin: 8rem 5rem 3rem 0;
 }
+
+
 /* -------------------Responsive Footer Diego ---------------------------  */
 
 @media(max-width:767px) {

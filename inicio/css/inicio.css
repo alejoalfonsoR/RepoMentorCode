@@ -45,26 +45,33 @@
 
 /* ---------------------- NAVBAR -------------------------- */
 
+
 /* ---------------------- MAIN -------------------------- */
-.inicio-flex{
+
+.inicio-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.primera{
-    width: 100vw;
+
+.primera {
+    width: 100%;
     margin-top: 3rem;
 }
-.segunda{
+
+.segunda {
     width: 75vw;
 }
 
-.tercera{
+.tercera {
     margin-bottom: 5rem;
     width: 75vw;
 }
+
+
 /* ---------------------- MAIN -------------------------- */
+
 
 /* ----------------------FOOTER -------------------------- */
 
@@ -75,6 +82,7 @@
 }
 
 .row {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }

@@ -62,7 +62,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 10rem 2rem;
 }
@@ -168,6 +168,7 @@ textarea {
 }
 
 .row {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }

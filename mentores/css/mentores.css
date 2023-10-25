@@ -144,13 +144,13 @@
 #mentorModal {
     overflow: hidden;
 }
+
 .modal-body {
     overflow: hidden;
     max-height: 80vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-
 
 .modal-body h3 {
     flex-shrink: 0;
@@ -182,6 +182,7 @@
 }
 
 .row {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
