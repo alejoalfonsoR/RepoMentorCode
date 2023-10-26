@@ -70,10 +70,10 @@
 }
 
 .cards article {
-    margin: 0.5rem;
     flex: 1;
     border: 0.5px solid var(--grismedio);
     border-radius: 20px;
+    height: auto;
 }
 
 .cards article:hover {
@@ -86,21 +86,41 @@
     height: 35vh;
     flex-shrink: 0;
     border-radius: 20px 20px 0px 0px;
-    padding-bottom: 1.3rem;
 }
 
-.cards p,
 .cards h3 {
     flex-shrink: 0;
     color: var(--azuloscuro);
 }
 
 .cards p {
+    padding: 0 0.6rem;
+    margin: 0.5rem 0;
+}
+
+.especialidad {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    flex-shrink: 0;
+    color: var(--azuloscuro);
     font-size: 1rem;
     font-style: normal;
     font-weight: bolder;
-    line-height: 0.5rem;
-    padding-left: 0.6rem;
+}
+
+.creador {
+    height: 2.5rem;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--grisoscuro);
+}
+
+.descripcion {
+    height: 4.5rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
 }
 
 .cards h3 {

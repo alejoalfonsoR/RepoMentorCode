@@ -1,102 +1,92 @@
 const listaCursos = [{
         id: 1,
         photo: "https://img.freepik.com/foto-gratis/concepto-collage-html-css-persona_23-2150062008.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Elena García",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "HTML5",
-        duration: "1-2 horas",
-        description: "Especialista con 3 años de experiencia en HTML5",
-        price: 40000,
+        description: "Aprende HTML, CSS, y JavaScript desde cero hasta niveles avanzados para crear sitios web dinámicos.",
+        creator: "Ana Fernández",
+        specialty: "Desarrollo web full-stack",
+        duration: "40 horas",
+        price: 120000,
     },
     {
         id: 2,
         photo: "https://img.freepik.com/foto-gratis/hombre-barbudo-sonriente-eyeglases-usando-laptop_171337-15793.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Luis Rodriguez",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "CSS3",
-        description: "Especialista con 3 años de experiencia en CSS3",
-        duration: "1-2 horas",
-        price: 20000,
+        description: "Descubre los conceptos fundamentales de la IA y aprende a implementar algoritmos en Python.",
+        creator: "Carlos Gómez",
+        specialty: "Inteligencia Artificial",
+        duration: "30 horas",
+        price: 115000,
     },
     {
         id: 3,
         photo: "https://img.freepik.com/foto-gratis/morena-hermosa-belleza-negocio-fondo_1303-1563.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Ana Martínez",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "JavaScript",
-        description: "Especialista con 3 años de experiencia en JavaScript",
-        duration: "1 hora",
-        price: 80000,
+        description: "Profundiza en el aprendizaje automático con TensorFlow y desarrolla modelos avanzados.",
+        creator: "María Rodríguez",
+        specialty: "Machine Learning",
+        duration: "50 horas",
+        price: 98000,
     },
     {
         id: 4,
         photo: "https://img.freepik.com/foto-gratis/retrato-usuario-emocionado-alegre-tableta-que-lleva-lentes_1262-18272.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Javier López",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "React.js",
-        description: "Especialista con 3 años de experiencia en React.js",
-        duration: "45 min",
-        price: 75000,
+        description: "Crea aplicaciones móviles para iOS y Android utilizando React Native y JavaScript.",
+        creator: "Juan Morales",
+        specialty: "Desarrollo de aplicaciones móviles",
+        duration: "35 horas",
+        price: 126000,
     },
     {
         id: 5,
         photo: "https://img.freepik.com/foto-gratis/negocios-finanzas-empleo-concepto-mujeres-emprendedoras-exitosas-confianza-empresaria-asiatica-sonriente-oficinista-traje-blanco-gafas-usando-computadora-portatil-ayuda-clientes_1258-59126.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Carolina Pérez",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "Angular",
-        description: "Especialista con 3 años de experiencia en Angular",
-        duration: "1 hora",
-        price: 34000,
+        description: "Explora las prácticas éticas de hacking, aprende a identificar vulnerabilidades y protege sistemas.",
+        creator: "Laura Martínez",
+        specialty: "Seguridad informática",
+        duration: "45 horas",
+        price: 87000,
     },
     {
         id: 6,
         photo: "https://img.freepik.com/foto-gratis/joven-ingeniero_1098-18393.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Alejandro Sánchez",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "Vue.js",
-        description: "Especialista con 3 años de experiencia en Vue Js",
-        duration: "1 hora",
-        price: 37000,
+        description: "Comprende los fundamentos de la tecnología blockchain y su aplicación en diferentes industrias.",
+        creator: "Pablo Serrano",
+        specialty: "Blockchain",
+        duration: "25 horas",
+        price: 65000,
     },
     {
         id: 7,
         photo: "https://img.freepik.com/foto-gratis/sonriente-joven-chica-centro-llamadas-gafas-sosteniendo-portatil-aislado-pared-purpura_141793-94415.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Isabel Fernández",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "Node.js",
-        description: "Especialista con 3 años de experiencia en Node.Js",
-        duration: "2 horas",
-        price: 25000,
+        description: "Diseña y optimiza bases de datos utilizando SQL y MySQL para aplicaciones escalables.",
+        creator: "Diana Delgado",
+        specialty: "Bases de datos",
+        duration: "40 horas",
+        price: 140000,
     },
     {
         id: 8,
         photo: "https://img.freepik.com/foto-gratis/programador-tiro-medio-sentado-silla_23-2149101160.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Jorge Ramírez",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "Express.js",
-        description: "Especialista con 3 años de experiencia en Express.Js",
-        duration: "1 hora",
-        price: 58000,
+        description: "Aprende a automatizar tareas repetitivas en la web utilizando Python y Selenium.",
+        creator: "Andrés Vargas",
+        specialty: "Automatización",
+        duration: "30 horas",
+        price: 98000,
     },
     {
         id: 9,
         photo: "https://img.freepik.com/foto-gratis/mujer-afroamericana-telefono-computadora-portatil-cafe_1303-8926.jpg",
-        name: "Laura González",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "MongoDB",
-        description: "Especialista con 3 años de experiencia en MongoDB",
-        duration: "1 hora",
-        price: 83000,
+        description: "Adopta prácticas ágiles de desarrollo de software utilizando Scrum y Kanban.",
+        creator: "Marta Herrera",
+        specialty: "Desarrollo ágil",
+        duration: "20 horas",
+        price: 67000,
     },
     {
         id: 10,
         photo: "https://img.freepik.com/foto-gratis/concepto-collage-html-css-persona_23-2150061986.jpg?size=626&ext=jpg&ga=GA1.1.1471857924.1692112283&semt=sph",
-        name: "Miguel Torres",
-        linkedin: "www.linkedin.com/in/joselin-lozada/",
-        specialty: "RESTful APIs",
-        description: "Especialista con 3 años de experiencia en Restfull APIs",
-        duration: "45 minutos",
-        price: 75000,
+        description: "Sumérgete en el mundo de la realidad virtual y crea experiencias interactivas con Unity.",
+        creator: "Víctor Mendoza",
+        specialty: "Realidad virtual",
+        duration: "35 horas",
+        price: 115000,
     },
 ];
 
@@ -108,14 +98,19 @@ function mapeoTarjetas() {
         const card = document.createElement("div");
         card.innerHTML = `
         <article>
-            <a href="#"><img src="${item.photo}" data-toggle="modal" data-target="#mentorModal" data-mentor-id="${item.id}"/></a>
-            <p>${item.name}</p>
-            <p>${item.specialty}</p>
+            <a href="#"><img src="${
+              item.photo
+            }" data-toggle="modal" data-target="#mentorModal" data-mentor-id="${
+      item.id
+    }"/></a>
+            <p class="especialidad">${item.specialty}</p>
+            <p class="creador">Un curso de ${item.creator}</p>
+            <p class="descripcion">${item.description}</p>
             <h3 class="cards__info">
                 $ <span>${item.price.toLocaleString("es-ES", {
                   style: "currency",
                   currency: "COP",
-                  maximumFractionDigits: 0
+                  maximumFractionDigits: 0,
                 })}</span>
             </h3>
             <div class="center">
@@ -124,13 +119,13 @@ function mapeoTarjetas() {
         </article>`;
 
         card.querySelector("a").addEventListener("click", (event) => {
-            event.preventDefault
+            event.preventDefault;
             const mentorId = event.target.getAttribute("data-mentor-id");
             const mentor = listaCursos.find((m) => m.id === parseInt(mentorId));
 
             const modalTitle = document.getElementById("mentorModalLabel");
             const mentorPhoto = document.getElementById("mentorPhoto");
-            const mentorDuration = document.getElementById("mentorDuration")
+            const mentorDuration = document.getElementById("mentorDuration");
             const mentorSpecialty = document.getElementById("mentorSpecialty");
             const mentorDescription = document.getElementById("mentorDescription");
             const mentorPrice = document.getElementById("mentorPrice");
@@ -143,7 +138,7 @@ function mapeoTarjetas() {
             mentorPrice.textContent = mentor.price.toLocaleString("es-ES", {
                 style: "currency",
                 currency: "COP",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 0,
             });
         });
 
@@ -154,4 +149,4 @@ function mapeoTarjetas() {
 document.addEventListener("DOMContentLoaded", mapeoTarjetas);
 
 //Cerrar la ventana modal dando click en cualquier parte
-var modal = document.getElementById('mentorModal');
+var modal = document.getElementById("mentorModal");
