@@ -21,10 +21,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
-            <a class="navbar-brand" href="#"><img src="./img/logoMentorCode.svg" class="logo-navbar" alt="" srcset=""></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top navbar-custom">
+            <a class="navbar-brand h-25" href="../inicio/inicio.html"><img src="./img/logoMentorCode.svg" class="logo-navbar" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
@@ -47,10 +47,10 @@
                         <a class="nav-link mr-2" href="../AboutUs/aboutUs.html#formulario">Contáctanos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mr-2" href="../compras/compras.html"><img src="./img/icons8-cart-32.png" alt="" srcset=""></a>
+                        <a class="nav-link mr-2" href="../compras/compras.html"><img src="./img/icons8-cart-32.png" alt=""></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mr-2" href="../login/login.html"><img src="./img/icons8-person-64.png" class="icon-person" alt="" srcset=""></a>
+                        <a class="nav-link mr-2" href="../login/login.html"><img src="./img/icons8-person-64.png" class="icon-person" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -64,13 +64,13 @@
         <div class="container">
             <form action="" id="formularioMentores">
                 <h2 class="text-center mb-4">Registro de mentores</h2>
-                        <div class="form-group">
-                            <label for="name">Nombre y apellido</label>
-                            <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre y apellido" required>
-                        </div>
+                <div class="form-group">
+                    <label for="name">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre y apellido" required>
+                </div>
                 <div class="form-group">
                     <label for="phone">Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="315 111 11 11" required>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
@@ -90,7 +90,7 @@
                     <input type="number" class="form-control" id="price" name="price" placeholder="$" required>
                 </div>
                 <div class="text-center">
-                    <button onclick="formularioMentores()" id="botonEvento"  class="button-submit">Enviar</button>
+                    <button onclick="formularioMentores()" id="botonEvento" class="button-submit">Enviar</button>
                 </div>
             </form>
         </div>
@@ -98,13 +98,13 @@
 
 
     <section>
-         <h1 class="equipo__titulo">Mentores Agregados</h1>
+        <h1 class="equipo__titulo">Mentores Agregados</h1>
         <div class="cards" id="tarjetaMentores">
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class = "piePagina">
+    <footer class="piePagina">
         <div class="piePaginaContainer">
             <div class="row">
                 <div class="footer-section">
