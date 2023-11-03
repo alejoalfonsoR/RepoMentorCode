@@ -74,8 +74,11 @@
 .cards article {
     margin: 0.5rem;
     flex: 1;
-    border: var(--grismedio) 0.5px solid;
-    border-radius: 20px;
+    border: 0.063 solid #ccc;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+    /* border: var(--grismedio) 0.5px solid;
+    border-radius: 20px; */
 }
 
 .cards article:hover {

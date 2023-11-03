@@ -90,63 +90,101 @@ const listaCursos = [{
     },
 ];
 
+const itemsPerPage = 4; // Ajusta el número de elementos por página según tus necesidades
+let currentPage = 1;
+
 function mapeoTarjetas() {
     const contenedorTarjetas = document.getElementById("tarjetaMentores");
+    const paginationContainer = document.getElementById("pagination");
     const modal = document.getElementById("mentorModal");
 
-    listaCursos.forEach((item) => {
-        const card = document.createElement("div");
-        card.innerHTML = `
-        <article>
-            <a href="#"><img src="${
-              item.photo
-            }" data-toggle="modal" data-target="#mentorModal" data-mentor-id="${
-      item.id
-    }"/></a>
-            <p class="especialidad">${item.specialty}</p>
-            <p class="creador">Un curso de ${item.creator}</p>
-            <p class="descripcion">${item.description}</p>
-            <h3 class="cards__info">
-                $ <span>${item.price.toLocaleString("es-ES", {
-                  style: "currency",
-                  currency: "COP",
-                  maximumFractionDigits: 0,
-                })}</span>
-            </h3>
-            <div class="center">
-            <button class="button-cart"></button>
-        </div>
-        </article>`;
+    const totalItems = listaCursos.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-        card.querySelector("a").addEventListener("click", (event) => {
-            event.preventDefault;
-            const mentorId = event.target.getAttribute("data-mentor-id");
-            const mentor = listaCursos.find((m) => m.id === parseInt(mentorId));
+    function showPage(page) {
+        contenedorTarjetas.innerHTML = ""; // Limpiar el contenedor antes de agregar nuevas tarjetas
 
-            const modalTitle = document.getElementById("mentorModalLabel");
-            const mentorPhoto = document.getElementById("mentorPhoto");
-            const mentorDuration = document.getElementById("mentorDuration");
-            const mentorSpecialty = document.getElementById("mentorSpecialty");
-            const mentorDescription = document.getElementById("mentorDescription");
-            const mentorPrice = document.getElementById("mentorPrice");
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
 
-            modalTitle.textContent = mentor.name;
-            mentorPhoto.src = mentor.photo;
-            mentorSpecialty.textContent = mentor.specialty;
-            mentorDescription.textContent = mentor.description;
-            mentorDuration.textContent = mentor.duration;
-            mentorPrice.textContent = mentor.price.toLocaleString("es-ES", {
-                style: "currency",
-                currency: "COP",
-                maximumFractionDigits: 0,
+        for (let i = startIndex; i < endIndex && i < totalItems; i++) {
+            const item = listaCursos[i];
+            const card = document.createElement("div");
+            card.innerHTML = `
+            <article>
+                <a href="#"><img src="${
+                    item.photo
+                }" data-toggle="modal" data-target="#mentorModal" data-mentor-id="${
+                    item.id
+                }"/></a>
+                <p class="especialidad">${item.specialty}</p>
+                <p class="creador">Un curso de ${item.creator}</p>
+                <p class="descripcion">${item.description}</p>
+                <h3 class="cards__info">
+                    $ <span>${item.price.toLocaleString("es-ES", {
+                        style: "currency",
+                        currency: "COP",
+                        maximumFractionDigits: 0,
+                    })}</span>
+                </h3>
+                <div class="center">
+                <button class="button-cart"></button>
+            </div>
+            </article>`;
+
+            // card.querySelector("a").addEventListener("click", (event) => {
+            //     event.preventDefault;
+            //     const mentorId = event.target.getAttribute("data-mentor-id");
+            //     const mentor = listaCursos.find((m) => m.id === parseInt(mentorId));
+
+            //     const modalTitle = document.getElementById("mentorModalLabel");
+            //     const mentorPhoto = document.getElementById("mentorPhoto");
+            //     const mentorDuration = document.getElementById("mentorDuration");
+            //     const mentorSpecialty = document.getElementById("mentorSpecialty");
+            //     const mentorDescription = document.getElementById("mentorDescription");
+            //     const mentorPrice = document.getElementById("mentorPrice");
+
+            //     modalTitle.textContent = mentor.name;
+            //     mentorPhoto.src = mentor.photo;
+            //     mentorSpecialty.textContent = mentor.specialty;
+            //     mentorDescription.textContent = mentor.description;
+            //     mentorDuration.textContent = mentor.duration;
+            //     mentorPrice.textContent = mentor.price.toLocaleString("es-ES", {
+            //         style: "currency",
+            //         currency: "COP",
+            //         maximumFractionDigits: 0,
+            //     });
+            // });
+
+            contenedorTarjetas.appendChild(card);
+        }
+    }
+
+    function createPaginationButtons() {
+        for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement("button");
+            button.innerText = i;
+            button.addEventListener("click", function() {
+                currentPage = i;
+                showPage(currentPage);
+
+                const activeButton = document.querySelector(".pagination button.active");
+                if (activeButton) {
+                    activeButton.classList.remove("active");
+                }
+
+                button.classList.add("active");
             });
-        });
 
-        contenedorTarjetas.appendChild(card);
-    });
+            paginationContainer.appendChild(button);
+        }
+    }
+
+    showPage(currentPage);
+    createPaginationButtons();
 }
 
 document.addEventListener("DOMContentLoaded", mapeoTarjetas);
 
 //Cerrar la ventana modal dando click en cualquier parte
-var modal = document.getElementById("mentorModal");
+// var modal = document.getElementById("mentorModal");
