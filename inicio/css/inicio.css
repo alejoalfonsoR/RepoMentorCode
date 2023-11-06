@@ -48,6 +48,8 @@
 
 /* ---------------------- MAIN -------------------------- */
 
+/*Primer banner*/
+
 .inicio-flex {
     display: flex;
     flex-direction: column;
@@ -57,8 +59,61 @@
 
 .primera {
     width: 100%;
-    margin-top: 3rem;
+    height: 95vh;
+    margin-top: 5rem;
+    display: flex;
+    background-color: var(--azulmedio);
+    background-image: url(../img/Vector.svg);
+    background-size: 52%;
+    background-repeat: no-repeat;
+    background-position: 6% 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
+
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 50%;
+    width: 40%;
+    border-radius: 50px;
+    padding: 3% 5%;
+}
+
+.izquierda h1{
+    color: var(--azuloscuro);
+    font-weight: 700;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.parrafo1{
+    text-align: center;
+    font-size: 1.1vw;
+}
+ .boton{
+    text-align: center;
+    background-color: var(--azuloscuro);
+    color: white;
+    width:fit-content;
+    padding: 3%;
+    border-radius: 50px;
+    font-size: 1.1vw;
+ }
+ .boton:hover {
+    color:white; 
+    font-weight: 700;
+    text-decoration:none; 
+}
+
+ .derecha{
+    width: 40%;
+    object-fit: contain;
+ }
 
 .segunda {
     width: 75vw;
@@ -68,6 +123,70 @@
     margin-bottom: 5rem;
     width: 75vw;
 }
+
+/*Banner que cambia de imágenes*/
+.banner {
+    width: 100%;
+    height: 27vw;
+    overflow: hidden;
+    margin-top: 1.8rem;
+    position: relative;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Oculta los radio buttons */
+.banner input[type="radio"] {
+    display: none;
+}
+
+.banner-container {
+    display: flex;
+    width: 400%; 
+    animation: banner 10s infinite linear;
+}
+
+.banner-image {
+    flex: 1;
+    width: 25%;
+}
+
+.banner a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.radio-labels {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.radio-labels label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #aaa;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#radio1:checked ~ .banner-container { margin-left: 0; }
+#radio2:checked ~ .banner-container { margin-left: -100%; }
+#radio3:checked ~ .banner-container { margin-left: -200%; }
+#radio4:checked ~ .banner-container { margin-left: -300%; }
+#radio1:checked ~ .radio-labels label:nth-child(1) { background: #333; }
+#radio2:checked ~ .radio-labels label:nth-child(2) { background: #333; }
+#radio3:checked ~ .radio-labels label:nth-child(3) { background: #333; }
+#radio4:checked ~ .radio-labels label:nth-child(4) { background: #333; }
 
 
 /* ---------------------- MAIN -------------------------- */

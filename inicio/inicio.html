@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/6dc7cbf907.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <script src="./js/inicio.js"></script>
 
 
 </head>
@@ -56,7 +57,63 @@
         </nav>
     </header>
     <main class="inicio-flex">
-        <img class="primera" src="img/inicio1.png">
+        <!-- Primera parte "Aprende en línea... Regístrate"-->
+        <section class="primera">
+            <div class="izquierda">
+                <h1>Aprende en línea de forma personalizada</h1>
+                <p class="parrafo1">Únete a la nueva comunidad de aprendizaje de para desarrolladores de latinoamérica. Crea tu cuenta completamente gratis</p>
+                <a class="boton" href="../registroLogin/registroLogin.html">Regístrate</a>
+            </div>
+            <img src="./img/inicio1.png" class="derecha" alt="educación online">
+        </section>
+        
+        <!-- Banner que cambia de imágenes -->
+        <section class="banner">
+            <input type="radio" name="banner-radio" id="radio1" checked>
+            <input type="radio" name="banner-radio" id="radio2">
+            <input type="radio" name="banner-radio" id="radio3">
+            <input type="radio" name="banner-radio" id="radio4">
+            
+            <div class="banner-container">
+                <div class="banner-image" id="image1">
+                    <a href="../AboutUs/aboutUs.html">
+                        <img src="./img/banner1.jpg" alt="banner1">
+                    </a>
+                </div>
+                <div class="banner-image" id="image2">
+                    <a href="../foro/foro.html">
+                        <img src="./img/banner2.jpg" alt="banner2">
+                    </a>
+                </div>
+                <div class="banner-image" id="image3">
+                    <a href="#">
+                        <img src="./img/banner3.jpg" alt="banner3">
+                    </a>
+                </div>
+                <div class="banner-image" id="image4">
+                    <a href="https://colombia.generation.org/bogota/desarrolladora-junior/"target="_blank">
+                        <img src="./img/banner4.jpg" alt="Imagen 4">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="radio-labels">
+                <label for="radio1"></label>
+                <label for="radio2"></label>
+                <label for="radio3"></label>
+                <label for="radio4"></label>
+            </div>
+        </section>
+        
+        
+
+        
+       
+       
+    
+        
+
+
         <img class="segunda" src="img/inicio2.png">
         <img class="tercera" src="img/inicio3.png">
     </main>
