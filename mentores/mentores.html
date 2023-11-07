@@ -60,40 +60,52 @@
 <body>
     <h1 class="equipo__titulo">Todos nuestros mentores</h1>
 
-    <section>
-        <div class="cards" id="tarjetaMentores">
-
+    <div class="busqueda" id="search-container">
+        <input type="text" id="search-input" placeholder="Buscar por especialidad">
+        <div class="busqueda__responsive">
+            <button id="search-button">Buscar</button>
+            <button id="clear-button">Limpiar</button>
         </div>
+    </div>
+
+    <div id="no-results-message" style="display: none;">
+        <p class="mensaje"><span>Tu búsqueda no generó ningún resultado.</span> <br>Por favor, modifica tu búsqueda e inténtalo de nuevo.</p>
+
+    </div>
+
+    <section>
+        <div class="cards" id="tarjetaMentores"></div>
+        <div class="pagination" id="pagination"></div>
     </section>
 
 
-<!-- Modal -->
-<div class="modal" id="mentorModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="mentorModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <!-- Modal -->
+    <div class="modal" id="mentorModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mentorModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
-            <div class="modal-body">
-                <img src="" id="mentorPhoto" alt="Mentor Photo">
-                <h3>Tecnologías</h3>
-                <p id="mentorSpecialty"></p>
-                <h3>Perfil</h3>
-                <p id="mentorDescription"></p>
-                <h3>Duración</h3>
-                <p id="mentorDuration"></p>
-                <h3 class="modal-price">
-                    <span id="mentorPrice"></span>
-                </h3>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="mentorPhoto" alt="Mentor Photo">
+                    <h3>Tecnologías</h3>
+                    <p id="mentorSpecialty"></p>
+                    <h3>Perfil</h3>
+                    <p id="mentorDescription"></p>
+                    <h3>Duración</h3>
+                    <p id="mentorDuration"></p>
+                    <h3 class="modal-price">
+                        <span id="mentorPrice"></span>
+                    </h3>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal -->
-    
+    <!-- Modal -->
+
 
     <!-- Footer -->
     <footer class="piePagina">

@@ -46,11 +46,59 @@
 /* ---------------------- NAVBAR -------------------------- */
 
 
+/* ----------------------Barra de busqueda---------------------- */
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.busqueda input {
+    width: 20rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    margin-right: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.busqueda button {
+    background-color: var(--azulmedio);
+    color: white;
+    border: 0.063rem solid var(--azulmedio);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.mensaje {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--azuloscuro);
+    font-size: 1.2rem;
+}
+
+.mensaje span {
+    font-weight: bolder;
+    white-space: pre-line;
+}
+
+
+/* ------------------Fin Barra de busqueda---------------------- */
+
+
 /*Inicio Body*/
 
 .equipo__titulo {
     color: var(--azuloscuro);
-    margin: 3rem auto 1rem;
+    margin: 6.5rem auto 1rem;
     text-align: left;
     font-size: 2rem;
     font-style: normal;
@@ -58,49 +106,69 @@
     line-height: 2.5rem;
     letter-spacing: -0.02rem;
     padding-left: 11vw;
-    padding-top: 3rem;
 }
 
 .cards {
+    /* border: 1px solid red !important; */
     justify-content: space-between;
     display: grid;
-    gap: 2%;
+    gap: 1.5%;
     grid-template-columns: repeat(4, 1fr);
     width: 70vw;
-    height: 100%;
-    margin: 1rem auto 6rem;
+    height: auto;
+    margin: 0 auto 1rem;
+    padding: 1rem 0;
 }
 
 .cards article {
-    margin: 0.5rem;
     flex: 1;
     border: 0.063 solid #ccc;
     border-radius: 1.25rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
-    /* border: var(--grismedio) 0.5px solid;
+    /* border: 0.5px solid var(--grismedio);
     border-radius: 20px; */
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 
 .cards article:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .cards article img {
     object-fit: cover;
     width: 100%;
-    height: 35vh;
+    height: 31vh;
     flex-shrink: 0;
     border-radius: 20px 20px 0px 0px;
-    padding-bottom: 1.3rem;
 }
 
 .cards p {
+    padding: 0 0.6rem;
+    margin: 0.4rem 0 0;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.nombre {
+    /* border: 1px solid red !important; */
+    /* height: 2.5rem; */
+    flex-shrink: 0;
     color: var(--azuloscuro);
     font-size: 1rem;
     font-style: normal;
     font-weight: bolder;
-    line-height: 0.5rem;
-    padding-left: 0.6rem;
+}
+
+.especialidad {
+    /* border: 1px solid red !important; */
+    /* margin: 0 0; */
+    /* height: 2.5rem; */
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--grisoscuro);
 }
 
 .cards h3 {
@@ -111,6 +179,7 @@
     font-weight: 600;
     line-height: 2.2rem;
     padding-left: 0.6rem;
+    margin: 0;
 }
 
 .center {
@@ -119,10 +188,10 @@
 
 .button-cart {
     border: none;
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/icons8-cart-32.png');
-    background-size: 30px 30px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url("../img/icons8-cart-32.png");
+    background-size: 1.875rem 1.875rem;
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
@@ -174,6 +243,38 @@
 
 
 /* Modal de nuestros mentores */
+
+
+/* Inicio paginacion */
+
+.pagination {
+    /* border: 1px solid red !important; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.pagination button {
+    background-color: var(--azulmedio);
+    color: white;
+    border: 0.063rem solid var(--azulmedio);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pagination button.active {
+    background-color: var(--azuloscuro);
+}
+
+
+/* Fin paginacion */
 
 
 /* ----------------------FOOTER -------------------------- */
@@ -279,15 +380,58 @@ ul {
 
 /* -------------------Responsive Footer Diego ---------------------------  */
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .footer-section {
         width: 50%;
-        margin: bottom 30px;
+        margin-bottom: 30px;
         padding: 30px;
     }
 }
 
-@media(max-width:574px) {
+@media (max-width: 574px) {
+    /* ----------------------Barra de busqueda---------------------- */
+    .equipo__titulo {
+        margin-top: 7.5rem;
+    }
+    .busqueda {
+        /* border: 1px solid red !important; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 3rem 0;
+        width: 100vw;
+        gap: 4%;
+        font-size: 1.2rem;
+        /* height: auto; */
+    }
+    .busqueda__responsive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6%;
+        padding-bottom: 2rem;
+    }
+    .busqueda input {
+        /* border: 1px solid red !important; */
+        justify-content: center;
+        padding: 0 auto;
+        width: 100%;
+        height: 2.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    /* ------------------Fin Barra de busqueda---------------------- */
+    /* Adaptacion de las cards a movile */
+    .cards {
+        /* border: 1px solid red !important; */
+        display: grid;
+        gap: 0.8%;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 11rem;
+        /* height: auto; */
+    }
+    .cards article:hover {
+        transform: scale(1.03);
+    }
+    /* Fin Adaptacion de las cards a movile */
     .footer-section {
         width: 100%;
     }

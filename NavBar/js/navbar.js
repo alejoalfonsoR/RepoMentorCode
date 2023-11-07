@@ -1,22 +1,47 @@
-// Obtener el elemento de entrada y el párrafo para mostrar el mensaje
-const correoInput = document.getElementById('email');
-const mensaje = document.getElementById('mensaje');
+function loadNavbar() {
+    // Selecciona el contenedor
+    var navbarContainer = document.getElementById('navbar-container');
 
-// Función para validar el correo electrónico
-function validarCorreo() {
-    const correo = correoInput.value;
+    // Crea una solicitud HTTP
+    var xhr = new XMLHttpRequest();
 
-    if (correo.includes('@')) {
-        mensaje.textContent = 'Correo electrónico válido.';
-        mensaje.style.color = 'green';
-    } else {
-        mensaje.textContent = 'El correo electrónico debe contener el símbolo @.';
-        mensaje.style.color = 'red';
-    }
+    // Configura la solicitud
+    xhr.open('GET', 'navbar.html', true);
+
+    // Define la función a ejecutar cuando se complete la solicitud
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            // Carga el contenido en el contenedor
+            navbarContainer.innerHTML = xhr.responseText;
+        }
+    };
+
+    // Envía la solicitud
+    xhr.send();
 }
 
+// Llama a la función para cargar la barra de navegación al cargar la página
+window.onload = loadNavbar;
+
+// Obtener el elemento de entrada y el párrafo para mostrar el mensaje
+// const correoInput = document.getElementById('email');
+// const mensaje = document.getElementById('mensaje');
+
+// Función para validar el correo electrónico
+// function validarCorreo() {
+//     const correo = correoInput.value;
+
+//     if (correo.includes('@')) {
+//         mensaje.textContent = 'Correo electrónico válido.';
+//         mensaje.style.color = 'green';
+//     } else {
+//         mensaje.textContent = 'El correo electrónico debe contener el símbolo @.';
+//         mensaje.style.color = 'red';
+//     }
+// }
+
 // Se agregar un event listener al campo de entrada
-correoInput.addEventListener('input', validarCorreo);
+// correoInput.addEventListener('input', validarCorreo);
 
 //--------------------Codigo de Carito para validar campos del formulario---------------------
 // const formularioContacto = document.querySelector('#formularioContacto');

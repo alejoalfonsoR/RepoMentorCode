@@ -90,84 +90,80 @@ const listaCursos = [{
     },
 ];
 
-const itemsPerPage = 4; // Ajusta el número de elementos por página según tus necesidades
-let currentPage = 1;
+// Establece el número de elementos por página
+const itemsPerPage = 4;
 
+// Inicializa la página actual y la lista filtrada
+let currentPage = 1;
+let filteredList = [];
+
+// Función principal para mapear y mostrar las tarjetas
 function mapeoTarjetas() {
+    // Obtiene los elementos del DOM
     const contenedorTarjetas = document.getElementById("tarjetaMentores");
     const paginationContainer = document.getElementById("pagination");
     const modal = document.getElementById("mentorModal");
+    const noResultsMessage = document.getElementById("no-results-message");
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    const clearButton = document.getElementById("clear-button");
 
+    // Calcula el total de elementos y páginas
     const totalItems = listaCursos.length;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    function showPage(page) {
-        contenedorTarjetas.innerHTML = ""; // Limpiar el contenedor antes de agregar nuevas tarjetas
+    // Función para mostrar una página específica de la lista de elementos
+    function showPage(page, itemList) {
+        contenedorTarjetas.innerHTML = "";
 
+        // Calcula el rango de elementos a mostrar en la página actual
+        const totalItems = itemList.length;
         const startIndex = (page - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
 
+        // Itera sobre los elementos y crea las tarjetas correspondientes
         for (let i = startIndex; i < endIndex && i < totalItems; i++) {
-            const item = listaCursos[i];
+            const item = itemList[i];
             const card = document.createElement("div");
             card.innerHTML = `
-            <article>
-                <a href="#"><img src="${
-                    item.photo
-                }" data-toggle="modal" data-target="#mentorModal" data-mentor-id="${
-                    item.id
-                }"/></a>
-                <p class="especialidad">${item.specialty}</p>
-                <p class="creador">Un curso de ${item.creator}</p>
-                <p class="descripcion">${item.description}</p>
-                <h3 class="cards__info">
-                    $ <span>${item.price.toLocaleString("es-ES", {
-                        style: "currency",
-                        currency: "COP",
-                        maximumFractionDigits: 0,
-                    })}</span>
-                </h3>
-                <div class="center">
-                <button class="button-cart"></button>
-            </div>
-            </article>`;
-
-            // card.querySelector("a").addEventListener("click", (event) => {
-            //     event.preventDefault;
-            //     const mentorId = event.target.getAttribute("data-mentor-id");
-            //     const mentor = listaCursos.find((m) => m.id === parseInt(mentorId));
-
-            //     const modalTitle = document.getElementById("mentorModalLabel");
-            //     const mentorPhoto = document.getElementById("mentorPhoto");
-            //     const mentorDuration = document.getElementById("mentorDuration");
-            //     const mentorSpecialty = document.getElementById("mentorSpecialty");
-            //     const mentorDescription = document.getElementById("mentorDescription");
-            //     const mentorPrice = document.getElementById("mentorPrice");
-
-            //     modalTitle.textContent = mentor.name;
-            //     mentorPhoto.src = mentor.photo;
-            //     mentorSpecialty.textContent = mentor.specialty;
-            //     mentorDescription.textContent = mentor.description;
-            //     mentorDuration.textContent = mentor.duration;
-            //     mentorPrice.textContent = mentor.price.toLocaleString("es-ES", {
-            //         style: "currency",
-            //         currency: "COP",
-            //         maximumFractionDigits: 0,
-            //     });
-            // });
+                    <article>
+                        <img src="${item.photo}" data-toggle="modal" data-target="#mentorModal" data-mentor-id="${item.id}"/>
+                        <p class="especialidad">${item.specialty} </p>
+                        <p class="creador">Un curso de ${item.creator}</p>
+                        <p class="descripcion">${item.description}</p>
+                        <h3 class="cards__info">
+                            $ <span>${item.price.toLocaleString("es-ES", {
+                                style: "currency",
+                                currency: "COP",
+                                maximumFractionDigits: 0,
+                            })}</span>
+                        </h3>
+                        <div class="center">
+                            <button class="button-cart"></button>
+                        </div>
+                    </article>`;
 
             contenedorTarjetas.appendChild(card);
         }
+
+        // Muestra u oculta el mensaje de búsqueda sin resultados
+        if (totalItems === 0) {
+            noResultsMessage.style.display = "block";
+        } else {
+            noResultsMessage.style.display = "none";
+        }
     }
 
+    // Función para crear los botones de paginación
     function createPaginationButtons() {
         for (let i = 1; i <= totalPages; i++) {
             const button = document.createElement("button");
             button.innerText = i;
             button.addEventListener("click", function() {
                 currentPage = i;
-                showPage(currentPage);
+                showPage(currentPage, filteredList.length ? filteredList : listaCursos);
 
+                // Maneja la clase activa para el botón de paginación seleccionado
                 const activeButton = document.querySelector(".pagination button.active");
                 if (activeButton) {
                     activeButton.classList.remove("active");
@@ -180,10 +176,52 @@ function mapeoTarjetas() {
         }
     }
 
-    showPage(currentPage);
+    // Agrega un evento de clic al botón de búsqueda
+    searchButton.addEventListener("click", performSearch);
+
+    // Agrega un evento de escucha para la tecla "Enter" en el campo de búsqueda
+    searchInput.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            performSearch();
+        }
+    });
+
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase(); // Convierte a minúsculas
+        const normalizedSearchTerm = searchTerm.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Normaliza y quita acentos
+        filteredList = listaCursos.filter(item => {
+            const normalizedSpecialty = item.specialty.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            return normalizedSpecialty.includes(normalizedSearchTerm);
+        });
+        currentPage = 1; // Reinicia la página al realizar una búsqueda
+        showPage(currentPage, filteredList);
+
+        // Actualiza la paginación con la nueva lista filtrada
+        paginationContainer.innerHTML = "";
+        createPaginationButtons();
+    }
+
+    // Agrega un evento de clic al botón de limpieza
+    clearButton.addEventListener("click", function() {
+        searchInput.value = ""; // Limpia el input de búsqueda
+        filteredList = []; // Limpia la lista filtrada
+        currentPage = 1; // Reinicia la página
+
+        // Oculta el mensaje de búsqueda sin resultados al limpiar
+        noResultsMessage.style.display = "none";
+
+        // Muestra la lista completa y actualiza la paginación
+        showPage(currentPage, listaCursos);
+        paginationContainer.innerHTML = "";
+        createPaginationButtons();
+    });
+
+    // Muestra la primera página y crea los botones de paginación al cargar la página
+    showPage(currentPage, listaCursos);
     createPaginationButtons();
 }
 
+// Agrega un evento que se ejecutará cuando se haya cargado el contenido del DOM
 document.addEventListener("DOMContentLoaded", mapeoTarjetas);
 
 //Cerrar la ventana modal dando click en cualquier parte

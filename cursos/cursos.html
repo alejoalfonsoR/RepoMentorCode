@@ -57,7 +57,11 @@
         </nav>
     </header>
 
+
+
+
     <h2 class="cursos__titulo">Cursos gratuitos</h2>
+
 
     <section class="cursos_contenedor">
 
@@ -83,9 +87,21 @@
         </div>
     </section>
 
-
-
     <h2 class="equipo__titulo">Todos nuestros cursos</h2>
+
+
+    <div class="busqueda" id="search-container">
+        <input type="text" id="search-input" placeholder="Buscar por especialidad">
+        <div class="busqueda__responsive">
+            <button id="search-button">Buscar</button>
+            <button id="clear-button">Limpiar</button>
+        </div>
+    </div>
+
+    <div id="no-results-message" style="display: none;">
+        <p class="mensaje"><span>Tu búsqueda no generó ningún resultado.</span> <br>Por favor, modifica tu búsqueda e inténtalo de nuevo.</p>
+
+    </div>
 
     <section>
         <div class="cards" id="tarjetaMentores"></div>
@@ -133,6 +149,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/aboutUs.js"></script>
+
 </body>
 
 </html>
