@@ -175,6 +175,8 @@
     padding: 0;
     width: 100%;
     background-color: #EDF2F7;
+    /* border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
 
 .container {
@@ -185,7 +187,6 @@
     align-items: center;
     height: auto;
     margin: 2rem auto;
-    border-radius: 2rem;
 }
 
 form ul {

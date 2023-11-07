@@ -29,11 +29,11 @@
 
 .nav-link {
     font-weight: bold;
-    color: var(--azuloscuro)!important;
+    color: var(--azuloscuro) !important;
 }
 
 .icon-person {
-    width: 33px
+    width: 33px;
 }
 
 .titulo {
@@ -42,6 +42,54 @@
 
 
 /* ----------------------Fin  NAVBAR -------------------------- */
+
+
+/* ----------------------Barra de busqueda---------------------- */
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.busqueda input {
+    width: 20rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    margin-right: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.busqueda button {
+    background-color: var(--azulmedio);
+    color: white;
+    border: 0.063rem solid var(--azulmedio);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.mensaje {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--azuloscuro);
+    font-size: 1.2rem;
+}
+
+.mensaje span {
+    font-weight: bolder;
+    white-space: pre-line;
+}
+
+
+/* ------------------Fin Barra de busqueda---------------------- */
 
 
 /* ---------------------Inicio cursos-------------------------- */
@@ -92,7 +140,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.3rem 0;
+    margin: 0.1rem 0;
     height: 3rem;
     flex-shrink: 0;
     color: var(--azuloscuro);
@@ -102,7 +150,7 @@ iframe {
 }
 
 .cursos_contenedor__creador {
-    margin: 0.3rem 0;
+    margin: 0.1rem 0;
     height: 1.5rem;
     font-size: 0.9rem;
     font-style: normal;
@@ -132,11 +180,11 @@ iframe {
     /* border: 1px solid red !important; */
     justify-content: space-between;
     display: grid;
-    gap: 2%;
+    gap: 1.5%;
     grid-template-columns: repeat(4, 1fr);
     width: 70vw;
     height: auto;
-    margin: 1rem auto 1rem;
+    margin: 0 auto;
     padding: 1rem 0;
 }
 
@@ -151,13 +199,13 @@ iframe {
 }
 
 .cards article:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .cards article img {
     object-fit: cover;
     width: 100%;
-    height: 35vh;
+    height: 31vh;
     flex-shrink: 0;
     border-radius: 20px 20px 0px 0px;
 }
@@ -170,17 +218,19 @@ iframe {
     border-radius: 20px 20px 0px 0px;
 }
 
-.cards h3 {
+
+/* .cards h3 {
     flex-shrink: 0;
     color: var(--azuloscuro);
-}
+} */
 
 .cards p {
     padding: 0 0.6rem;
-    margin: 0.5rem 0;
+    margin: 0.4rem 0;
 }
 
 .especialidad {
+    /* border: 1px solid red !important; */
     display: flex;
     align-items: center;
     height: 2.5rem;
@@ -192,6 +242,7 @@ iframe {
 }
 
 .creador {
+    margin: 0 0;
     height: 2.5rem;
     font-size: 0.9rem;
     font-style: normal;
@@ -200,17 +251,21 @@ iframe {
 }
 
 .descripcion {
+    margin: 0 0;
     height: 4.5rem;
     font-size: 0.9rem;
     line-height: 1rem;
 }
 
 .cards h3 {
+    flex-shrink: 0;
+    color: var(--azuloscuro);
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 600;
     line-height: 2.2rem;
     padding-left: 0.6rem;
+    margin: 0;
 }
 
 .center {
@@ -219,10 +274,10 @@ iframe {
 
 .button-cart {
     border: none;
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/icons8-cart-32.png');
-    background-size: 30px 30px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url("../img/icons8-cart-32.png");
+    background-size: 1.875rem 1.875rem;
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
@@ -230,44 +285,10 @@ iframe {
 }
 
 
-/* Modal de nuestros mentores */
-
-.modal {
-    max-width: 80%;
-    margin: auto;
-}
-
-#mentorPhoto {
-    max-width: 100%;
-    height: auto;
-    border-radius: 30px;
-    padding-bottom: 1.3rem;
-}
-
-#mentorModal {
-    overflow: hidden;
-}
-
-.modal-body {
-    overflow: hidden;
-    max-height: 80vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
-.modal-body h3,
-.modal-title {
-    color: var(--azuloscuro);
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 2.2rem;
-}
-
-
 /* Inicio paginacion */
 
 .pagination {
+    /* border: 1px solid red !important; */
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
@@ -285,6 +306,7 @@ iframe {
     margin: 0.25rem 0.125rem;
     cursor: pointer;
     border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .pagination button.active {
@@ -333,7 +355,7 @@ ul {
 }
 
 .footer-section h4::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -393,12 +415,52 @@ ul {
 }
 
 @media (max-width: 574px) {
-    /* Adaptacion de las cards a movile */
-    .cards {
+    /* ----------------------Barra de busqueda---------------------- */
+    .busqueda {
+        /* border: 1px solid red !important; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 3rem 0;
+        width: 100vw;
+        gap: 4%;
+        font-size: 1.2rem;
+        /* height: auto; */
+    }
+    .busqueda__responsive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6%;
+        padding-bottom: 2rem;
+    }
+    .busqueda input {
+        /* border: 1px solid red !important; */
+        justify-content: center;
+        padding: 0 auto;
+        width: 100%;
+        height: 2.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    /* ------------------Fin Barra de busqueda---------------------- */
+    /* --------------------------Cursos----------------------------- */
+    .cursos__titulo {
+        margin-top: 5rem;
+    }
+    .cursos {
+        /* border: 1px solid red !important; */
         display: grid;
         gap: 0.6%;
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 2rem;
+    }
+    /* ----------------------Fin Cursos----------------------------- */
+    /* Adaptacion de las cards a movile */
+    .cards {
+        display: grid;
+        gap: 0.8%;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 4rem;
+        height: auto;
     }
     .cards article:hover {
         transform: scale(1.03);
