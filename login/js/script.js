@@ -21,6 +21,9 @@ datosIngreso.addEventListener('submit', async (e) => {
     
         if (response.ok) {
             
+            localStorage.getItem('Email', Email);
+            localStorage.getItem('Contrasena', Contrasena);
+
             Swal.fire({
                 icon: 'success',
                 title: 'Inicio de sesión exitoso',
