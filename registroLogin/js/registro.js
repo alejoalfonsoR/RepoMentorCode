@@ -3,14 +3,14 @@ console.log(datosRegistro); // null
 
 datosRegistro.addEventListener('submit', async (e) =>{
     e.preventDefault()
-    const name = document.querySelector('#name').value
-    const email = document.querySelector('#email').value
-    const password = document.querySelector ('#password').value
+    const Nombre = document.querySelector('#name').value
+    const Email = document.querySelector('#email').value
+    const Contrasena = document.querySelector ('#password').value
 
     const requestBody = {
-        Nombre: name,
-        Email: email,
-        Contrasena: password
+        Nombre: Nombre,
+        Email: Email,
+        Contrasena: Contrasena,
     };
 
     try{
