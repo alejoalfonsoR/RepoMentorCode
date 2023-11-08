@@ -6,6 +6,7 @@ const listaCursos = [{
         specialty: "Desarrollo web full-stack",
         duration: "40 horas",
         price: 120000,
+        pago: "https://mpago.li/2VS3s2D"
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ const listaCursos = [{
         specialty: "Inteligencia Artificial",
         duration: "30 horas",
         price: 115000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
     {
         id: 3,
@@ -24,6 +26,7 @@ const listaCursos = [{
         specialty: "Machine Learning",
         duration: "50 horas",
         price: 98000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
     {
         id: 4,
@@ -33,6 +36,7 @@ const listaCursos = [{
         specialty: "Desarrollo de aplicaciones móviles",
         duration: "35 horas",
         price: 126000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
     {
         id: 5,
@@ -42,6 +46,7 @@ const listaCursos = [{
         specialty: "Seguridad informática",
         duration: "45 horas",
         price: 87000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
     {
         id: 6,
@@ -51,6 +56,7 @@ const listaCursos = [{
         specialty: "Blockchain",
         duration: "25 horas",
         price: 65000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
     {
         id: 7,
@@ -60,6 +66,7 @@ const listaCursos = [{
         specialty: "Bases de datos",
         duration: "40 horas",
         price: 140000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
     {
         id: 8,
@@ -69,6 +76,7 @@ const listaCursos = [{
         specialty: "Automatización",
         duration: "30 horas",
         price: 98000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
     {
         id: 9,
@@ -78,6 +86,7 @@ const listaCursos = [{
         specialty: "Desarrollo ágil",
         duration: "20 horas",
         price: 67000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
     {
         id: 10,
@@ -87,6 +96,7 @@ const listaCursos = [{
         specialty: "Realidad virtual",
         duration: "35 horas",
         price: 115000,
+        pago: "https://mpago.li/1ghpUsQ"
     },
 ];
 
@@ -131,6 +141,7 @@ function mapeoTarjetas() {
                         <p class="especialidad">${item.specialty} </p>
                         <p class="creador">Un curso de ${item.creator}</p>
                         <p class="descripcion">${item.description}</p>
+                        <div class="info-container">
                         <h3 class="cards__info">
                             $ <span>${item.price.toLocaleString("es-ES", {
                                 style: "currency",
@@ -139,8 +150,8 @@ function mapeoTarjetas() {
                             })}</span>
                         </h3>
                         <div class="center">
-                            <button class="button-cart"></button>
-                        </div>
+                        <a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>            
+                    </div>
                     </article>`;
 
             contenedorTarjetas.appendChild(card);

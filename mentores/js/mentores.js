@@ -7,6 +7,7 @@ const listaMentores = [{
         duration: "1-2 horas",
         description: "Especialista con 3 años de experiencia en HTML5",
         price: 40000,
+        pago: "https://mpago.li/2tsnxup"
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en CSS3",
         duration: "1-2 horas",
         price: 20000,
+        pago: "https://mpago.li/1PZxFnD"
     },
     {
         id: 3,
@@ -27,6 +29,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en JavaScript",
         duration: "1 hora",
         price: 80000,
+        pago: "https://mpago.li/1PZxFnD"
     },
     {
         id: 4,
@@ -37,6 +40,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en React.js",
         duration: "45 min",
         price: 75000,
+        pago: "https://mpago.li/1PZxFnD"
     },
     {
         id: 5,
@@ -47,6 +51,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en Angular",
         duration: "1 hora",
         price: 34000,
+        pago: "https://mpago.li/1PZxFnD"
     },
     {
         id: 6,
@@ -57,6 +62,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en Vue Js",
         duration: "1 hora",
         price: 37000,
+        pago: "https://mpago.li/1PZxFnD"
     },
     {
         id: 7,
@@ -67,6 +73,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en Node.Js",
         duration: "2 horas",
         price: 25000,
+        pago: "https://mpago.li/1PZxFnD"
     },
     {
         id: 8,
@@ -77,6 +84,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en Express.Js",
         duration: "1 hora",
         price: 58000,
+        pago: "https://mpago.li/1PZxFnD"
     },
     {
         id: 9,
@@ -87,6 +95,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en MongoDB",
         duration: "1 hora",
         price: 83000,
+        pago: "https://mpago.li/1PZxFnD"
     },
     {
         id: 10,
@@ -97,6 +106,7 @@ const listaMentores = [{
         description: "Especialista con 3 años de experiencia en Restfull APIs",
         duration: "45 minutos",
         price: 75000,
+        pago: "https://mpago.li/1PZxFnD"
     },
 ];
 
@@ -138,6 +148,7 @@ function mapeoTarjetas() {
                 <a href="#"><img src="${item.photo}" data-toggle="modal" data-target="#mentorModal" data-mentor-id="${item.id}"/></a>
                 <p class="nombre">${item.name}</p>
                 <p class="especialidad">${item.specialty}</p>
+                <div class="info-container">
                 <h3 class="cards__info">
                     $ <span>${item.price.toLocaleString("es-ES", {
                       style: "currency",
@@ -145,8 +156,8 @@ function mapeoTarjetas() {
                       maximumFractionDigits: 0
                     })}</span>
                 </h3>
-                <div class="center">
-                <button class="button-cart"></button>
+                <a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>
+                
             </div>
             </article>`;
 
