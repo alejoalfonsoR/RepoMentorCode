@@ -158,6 +158,22 @@ iframe {
     color: var(--grisoscuro);
 }
 
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-cart {
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url("../img/icons8-cart-32.png");
+    background-size: 1.875rem 1.875rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin-left: 10px; }
+
 
 /*---------------------------- Fin cursos------------------------- */
 
