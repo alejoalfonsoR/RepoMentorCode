@@ -116,7 +116,7 @@
     grid-template-columns: repeat(4, 1fr);
     width: 70vw;
     height: auto;
-    margin: 0 auto 1rem;
+    margin: 1rem auto 1rem;
     padding: 1rem 0;
 }
 
@@ -381,10 +381,16 @@ ul {
 /* -------------------Responsive Footer Diego ---------------------------  */
 
 @media (max-width: 767px) {
-    .footer-section {
-        width: 50%;
-        margin-bottom: 30px;
-        padding: 30px;
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
 }
 
@@ -432,8 +438,24 @@ ul {
         transform: scale(1.03);
     }
     /* Fin Adaptacion de las cards a movile */
+    .piePagina {
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
     .footer-section {
         width: 100%;
+    }
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
 }
 

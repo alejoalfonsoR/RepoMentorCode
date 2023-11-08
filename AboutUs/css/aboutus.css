@@ -171,34 +171,20 @@
 /* ---------------------- FORM -------------------------- */
 
 .formuario__completo {
-    /* background: url(../img/Vector.svg) no-repeat center center fixed; */
-    /* background-size: cover; */
-    /* background-image: url(../img/Vector.svg);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: 50% 0; */
     width: 100%;
-    /* background-color: white; */
     background: linear-gradient(to bottom, #0d2b4b, #35bdca);
-    /* Cambia los colores según tus preferencias */
-    /* background-color: var(--azulmedio); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 1rem 0;
+    padding: 4rem 0;
+    height: auto;
 }
 
 .container {
     /* border: 1px solid red !important; */
-    /* background-color: rgba(53, 189, 202, 0.6); */
-    /* background-color: var(--azulmedio); */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: auto; */
     padding: 2rem 0;
-    /* margin: 2rem auto; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-    /* border-radius: 2%; */
 }
 
 form ul {
@@ -211,7 +197,6 @@ form ul li {
 }
 
 label {
-    /* border: 1px solid red !important; */
     display: block;
     font-weight: bold;
     color: white;
@@ -229,32 +214,24 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-.data__form input {
+.row__form input {
     width: 25rem;
 }
 
 .mensaje__form textarea {
-    /* border: 1px solid red !important; */
     width: 51rem;
-    /* padding: 0.625rem; */
-    /* border-radius: 0.75rem; */
-    /* font-size: 1rem; */
-    /* background-color: #fff; */
-    /* box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1); */
-    /* resize: vertical; */
-    /* height: 9.375rem; */
     height: 6rem;
 }
 
 .button-submit {
-    /* border: 1px solid red !important; */
     background-color: var(--azuloscuro);
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 1rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     width: 30%;
     margin-top: 0.7rem;
 }
@@ -408,15 +385,18 @@ ul {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+        margin: 0 auto;
         gap: 1rem;
     }
     .cards-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
     }
     .equipo {
-        margin: 1rem 2rem;
+        text-align: center;
+        align-items: center;
+        margin: 1rem auto;
     }
     .equipo__titulo {
         font-size: 3rem;
@@ -427,8 +407,20 @@ ul {
         margin: 1rem 2rem;
     }
     .cards article {
+        text-align: center;
+        width: 100vw;
+        margin: 0.5rem 0;
+        padding: 0;
         max-width: 100%;
-        margin: 0.5rem;
+    }
+    .cards article img {
+        height: 60%;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    .cards article p {
+        text-align: center;
+        margin: 0;
     }
 }
 
@@ -439,16 +431,109 @@ ul {
 /* -------------------Responsive Footer Diego ---------------------------  */
 
 @media(max-width:767px) {
+    .piePagina {
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .piePaginaContainer {
+        margin: 0;
+        padding: 0;
+        width: 100vw !important;
+    }
     .footer-section {
-        width: 50%;
-        margin: bottom 30px;
-        padding: 30px;
+        margin: 1rem 0;
+    }
+    .footer-section img {
+        margin: 0 0;
+    }
+    .row__form input {
+        margin: 0 1rem;
+        padding: 0 0.5rem;
+        width: 98%;
+    }
+    .mensaje__form textarea {
+        margin: 0 1rem;
+        padding: 0 0.5rem;
+        width: 91%;
+    }
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
 }
 
 @media(max-width:574px) {
+    /* --------Navbar-------- */
+    .navbar-custom {
+        /* border: 1px solid red !important; */
+        display: flex;
+        align-items: center;
+    }
+    .navbar-custom a {
+        /* border: 1px solid red !important; */
+        position: relative;
+        width: 30rem;
+    }
+    /* .navbar-custom img {
+        border: 1px solid red !important;
+    } */
+    .navbar-custom button {
+        position: absolute;
+        margin-left: 18rem;
+    }
+    /* --------Mision Vision------------ */
+    .titulo__nosotros {
+        margin-top: 8rem;
+        font-size: 2.5rem;
+    }
+    /* --------Nuestro Equipo------------ */
+    .equipo__titulo {
+        font-size: 2.5rem;
+    }
+    .cards article:hover {
+        transform: scale(1);
+    }
+    /* ------------------Responsive contacto ------------------*/
+    .container {
+        padding: 1rem 0;
+    }
+    .row__form input {
+        margin: 0 1rem;
+        padding: 0 0.5rem;
+        width: 98%;
+    }
+    .mensaje__form textarea {
+        margin: 0 1rem;
+        padding: 0 0.5rem;
+        width: 91%;
+    }
+    /* ------------------Fin Responsive contacto------------------ */
+    .piePagina {
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
     .footer-section {
         width: 100%;
+    }
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
 }
 

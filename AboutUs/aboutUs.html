@@ -55,10 +55,10 @@
             </div>
         </nav>
     </header>
-
     <div>
         <h1 class="titulo__nosotros">Nosotros</h1>
     </div>
+
     <section class="mision">
         <img class="mision_img" src="img/mision.jpg" />
         <div class="mision_texto">
@@ -78,7 +78,8 @@
                 para crear un futuro digital de excelencia.
             </p>
         </div>
-        <img class="mision_img" src="img/vision.jpg" alt="Representacion de Visión del equipo" />
+        <img class="mision_img vision_img_responsive" src="img/vision.jpg" alt="Representacion de Visión del equipo" />
+    </section>
     </section>
     <!-- Sección de Nuestro Equipo -->
     <section class="equipo">
@@ -128,38 +129,38 @@
             <form action="https://formsubmit.co/mentorcodeapp@gmail.com" method="POST" id="formularioContacto">
                 <h2 class="text-center mb-4">Contacta a nuestro equipo</h2>
 
-                <div class="row data__form">
-                    <div class="col-6">
+                <div class="row row__form">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">Nombres</label>
-                            <input type="text" class="form-control h-auto" id="name" name="nombre" placeholder="Nombres" required>
+                            <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombres" required>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="lastName">Apellidos</label>
-                            <input type="text" class="form-control h-auto" id="lastName" name="apellido" placeholder="Apellidos" required>
+                            <input type="text" class="form-control" id="lastName" name="apellido" placeholder="Apellidos" required>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
+                <div class="row row__form">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="phone">Teléfono</label>
-                            <input type="tel" class="form-control h-auto" id="telefono" name="telefono" placeholder="Teléfono" required>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control h-auto" id="email" name="email" placeholder="example@mail.com" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com" required>
                             <p id="mensaje"></p>
                         </div>
                     </div>
                 </div>
                 <div class="form-group mensaje__form">
                     <label for="message">Déjanos un mensaje</label>
-                    <textarea class="form-control mensaje__form" id="message" name="mensaje" placeholder="Dejanos tu mensaje ..." required></textarea>
+                    <textarea class="form-control" id="message" name="mensaje" placeholder="Dejanos tu mensaje ..." required></textarea>
                 </div>
                 <div class="text-center">
                     <button type="submit" class="button-submit">Enviar</button>
