@@ -123,36 +123,43 @@
     <!-- Fin sección de Nuestro Equipo -->
 
 
-    <section id="formulario" class="container">
+    <section class="formuario__completo" id="formulario">
         <div class="container">
             <form action="https://formsubmit.co/mentorcodeapp@gmail.com" method="POST" id="formularioContacto">
                 <h2 class="text-center mb-4">Contacta a nuestro equipo</h2>
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="name">Nombres</label>
-                        <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombres" required>
+                <div class="row data__form">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="name">Nombres</label>
+                            <input type="text" class="form-control h-auto" id="name" name="nombre" placeholder="Nombres" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="lastName">Apellidos</label>
+                            <input type="text" class="form-control h-auto" id="lastName" name="apellido" placeholder="Apellidos" required>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="lastName">Apellidos</label>
-                        <input type="text" class="form-control" id="lastName" name="apellido" placeholder="Apellidos" required>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" class="form-control h-auto" id="telefono" name="telefono" placeholder="Teléfono" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control h-auto" id="email" name="email" placeholder="example@mail.com" required>
+                            <p id="mensaje"></p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="form-group col-12">
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
-                </div>
-                <div class="form-group col-12">
-                    <label for="email">Email</label>
-                    <p id="mensaje"></p>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com" required>
-                </div>
-                <div class="form-group col-12">
+                <div class="form-group mensaje__form">
                     <label for="message">Déjanos un mensaje</label>
-                    <textarea class="form-control" id="message" rows="4" name="mensaje" placeholder="Dejanos tu mensaje ..." required></textarea>
+                    <textarea class="form-control mensaje__form" id="message" name="mensaje" placeholder="Dejanos tu mensaje ..." required></textarea>
                 </div>
                 <div class="text-center">
                     <button type="submit" class="button-submit">Enviar</button>

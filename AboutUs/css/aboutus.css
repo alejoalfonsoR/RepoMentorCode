@@ -170,23 +170,28 @@
 
 /* ---------------------- FORM -------------------------- */
 
-.formularioTotal {
-    margin: 0;
-    padding: 0;
+.formuario__completo {
+    background-image: url(../img/Vector.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 100%;
-    background-color: #EDF2F7;
-    /* border-radius: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    background-color: var(--azulmedio);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .container {
-    background-color: var(--azulmedio);
+    /* border: 1px solid red !important; */
+    /* background-color: var(--azulmedio); */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    margin: 2rem auto;
+    /* height: auto; */
+    padding: 2rem 0;
+    /* margin: 2rem auto; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    /* border-radius: 2%; */
 }
 
 form ul {
@@ -199,14 +204,16 @@ form ul li {
 }
 
 label {
+    /* border: 1px solid red !important; */
     display: block;
     font-weight: bold;
     color: white;
-    text-shadow: 1px 1px 2px gray;
+    text-shadow: 0.063rem 0.063rem 0.125rem gray;
+    text-align: center;
+    width: 25rem;
 }
 
 .text-center {
-    color: white;
     color: white;
     text-shadow: 1px 1px 2px gray;
     font-weight: bold;
@@ -215,28 +222,32 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 12px;
-    font-size: 16px;
-    background-color: #fff;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+.data__form input {
+    width: 25rem;
 }
 
-textarea {
-    resize: vertical;
-    height: 150px;
+.mensaje__form textarea {
+    /* border: 1px solid red !important; */
+    width: 51rem;
+    /* padding: 0.625rem; */
+    /* border-radius: 0.75rem; */
+    /* font-size: 1rem; */
+    /* background-color: #fff; */
+    /* box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1); */
+    /* resize: vertical; */
+    /* height: 9.375rem; */
+    height: 6rem;
 }
 
 .button-submit {
-    background-color: #0d2b4b;
+    /* border: 1px solid red !important; */
+    background-color: var(--azuloscuro);
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 16px;
+    border-radius: 1rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     width: 30%;
 }
 
