@@ -150,7 +150,7 @@ function mapeoTarjetas() {
                             })}</span>
                         </h3>
                         <div class="center">
-                        <a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>              
+                        <a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>            
                     </div>
                     </article>`;
 

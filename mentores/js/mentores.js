@@ -156,8 +156,8 @@ function mapeoTarjetas() {
                       maximumFractionDigits: 0
                     })}</span>
                 </h3>
-                <a href="${item.pago}" target="_blank" rel="noopener noreferrer"></a>
-                <button class="button-cart"></button>
+                <a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>
+                
             </div>
             </article>`;
 
