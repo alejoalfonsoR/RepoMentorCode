@@ -22,19 +22,32 @@ datosRegistro.addEventListener('submit', async (e) =>{
             body: JSON.stringify(requestBody)
         });
 
-        if (response.ok){
-            //Mensaje de solicitud exitosa
-            alert("Registro Exitoso, ingresa con tu usuario y contraseña")
-            window.location.href = '../login/login.html'
-        }else {
-            const errorMessage = await response.text(); // Obtén el mensaje de error del servidor
-            alert(`Error en el inicio de sesión: ${errorMessage}`);
-        }
+        if (response.ok) {
 
-    } catch (error) {
-        //Mensaje de error
-        alert("Ocurrió un error en la solicitud.");
-    }
+            Swal.fire({
+                icon: 'success',
+                title: 'Registro Exitoso',
+                text: 'Ingresa con tu usuario y contraseña'
+            }).then(() => {
+                window.location.href = '../login/login.html';
+            });
+        } else {
+            const errorMessage = await response.text(); 
+            Swal.fire({
+                icon: 'error',
+                title: 'Error en el inicio de sesión',
+                text: errorMessage
+            });
+        }
+        
+        } catch (error) {
+            // Mensaje de error
+            Swal.fire({
+                icon: 'error',
+                title: 'Ocurrió un error en la solicitud'
+            });
+        }
+        
 
     // //Variable que recibe usuarios registrados o en su defecto los crea
     // const Users = JSON.parse(localStorage.getItem('users')) || []

@@ -120,6 +120,7 @@
     padding: 1rem 0;
 }
 
+
 .cards article {
     flex: 1;
     border: 0.063 solid #ccc;
@@ -186,6 +187,11 @@
     text-align: center;
 }
 
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
 .button-cart {
     border: none;
     width: 2.5rem;
@@ -195,9 +201,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
-    display: inline-block;
-}
-
+    margin-left: 10px;}
 
 /* Modal de nuestros mentores */
 
