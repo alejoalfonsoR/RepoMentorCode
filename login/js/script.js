@@ -18,17 +18,28 @@ datosIngreso.addEventListener('submit', async (e) => {
             },
             body: JSON.stringify(requestBody),
         });
-
+    
         if (response.ok) {
-            // Procesar la respuesta exitosa, redireccionar y mostrar un mensaje de éxito.
-            alert("Inicio de sesión exitoso");
-            window.location.href = '../inicio/inicio.html'
+            Swal.fire({
+                icon: 'success',
+                title: 'Inicio de sesión exitoso',
+                showConfirmButton: false,
+                timer: 1500
+            }).then(() => {
+                window.location.href = '../inicio/inicio.html';
+            });
         } else {
-            const errorMessage = await response.text(); // Obtén el mensaje de error del servidor
-            alert(`Error en el inicio de sesión: ${errorMessage}`);
+            const errorMessage = await response.text();
+            Swal.fire({
+                icon: 'error',
+                title: 'Error en el inicio de sesión',
+                text: errorMessage
+            });
         }
     } catch (error) {
-        // Manejo de errores de red u otros errores inesperados.
-        alert("Ocurrió un error en la solicitud.");
-    }
-});
+    
+        Swal.fire({
+            icon: 'error',
+            title: 'Ocurrió un error en la solicitud'
+        });
+    }})
