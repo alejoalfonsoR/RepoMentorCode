@@ -21,8 +21,8 @@ datosIngreso.addEventListener('submit', async (e) => {
     
         if (response.ok) {
             
-            localStorage.getItem('Email', Email);
-            localStorage.getItem('Contrasena', Contrasena);
+            localStorage.setItem('Email', Email);
+            localStorage.setItem('Contrasena', Contrasena);
 
             Swal.fire({
                 icon: 'success',
