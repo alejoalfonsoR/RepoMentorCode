@@ -42,7 +42,7 @@
 
 .mision_img {
     width: 40%;
-    height: 44%;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -364,8 +364,8 @@ ul {
     .mision_img {
         margin-top: 1rem;
         margin-bottom: 2rem;
-        width: 40%;
-        height: 34%;
+        width: 75%;
+        height: auto%;
     }
     .mision_texto {
         align-items: center;
@@ -414,8 +414,8 @@ ul {
         max-width: 100%;
     }
     .cards article img {
-        height: 60%;
-        width: 60%;
+        height: 45%;
+        width: 45%;
         margin-bottom: 1rem;
     }
     .cards article p {

@@ -484,7 +484,7 @@ ul {
 
 /* -------------------Responsive Footer Diego ---------------------------  */
 
-@media(max-width:767px) {
+@media(max-width:992px) {
     .footer-section ul p:hover {
         color: #bbbbbb;
         padding-left: 0;
@@ -495,6 +495,46 @@ ul {
     }
     .footer-section .social-links a:hover {
         padding-left: 0;
+    }
+
+    /*Responsive primera parte main*/
+    .primera {
+        height: 30vh;
+        background-position: 0% 25%;
+        flex-direction: column;
+        justify-content: center;
+        background-size: 55%;
+        background-repeat:round;
+    }
+    .izquierda {
+        height: 80%;
+        width: 80%;
+        padding: 3% 5%;
+    }
+    .derecha{
+        display: none;
+    }
+    .izquierda h1 {
+        font-size: 1.5rem;
+    }
+    
+    .parrafo1 {
+        font-size: 1.1rem;
+    }
+
+    /*Responsive tarjetas mentores inicio*/
+    .cards {
+        display: grid;
+        gap: 10%;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 6rem;
+        /* height: auto; */
+    }
+    .cards article:hover {
+        transform: none;
+    }
+    .cards article img {
+        height: auto;
     }
 }
 
@@ -518,6 +558,55 @@ ul {
     .footer-section .social-links a:hover {
         padding-left: 0;
     }
+
+    /*Responsive primera parte main*/
+    .primera {
+        height: 55vh;
+        background-position: 20% 80%;
+        background-size: 140%;
+        background-repeat:no-repeat;
+        justify-content: center;
+    }
+    .izquierda{
+        padding: 3rem 1.5rem;
+    }
+    .izquierda h1 {
+        font-size: 1.3rem;
+    }
+    .boton{
+        font-size: 1rem;
+    }
+    
+    .parrafo1 {
+        font-size: 0.8rem;
+    }
+
+    /*Banner*/
+    .banner{
+        display: none;
+    }
+    /* Adaptacion de las cards a mobile */
+    .cards {
+        display: grid;
+        gap: 0.8%;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 2rem;
+        /* height: auto; */
+    }
+    .cards article:hover {
+        transform: none;
+    }
+    .boton2{
+        font-size: 1rem !important;
+     }
+
+     /*Curso destacado*/
+     .marco-video{
+        width: 85%;
+        height: auto;
+    }
+     
+    
 }
 
 
