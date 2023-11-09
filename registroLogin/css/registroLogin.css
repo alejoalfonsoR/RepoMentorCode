@@ -304,18 +304,53 @@ ul {
     }
     /* -------------------Fin Responsive main Caro ---------------------------  */
     /* -------------------Responsive Footer Diego ---------------------------  */
-    .footer-section {
-        width: 50%;
-        margin: bottom 30px;
-        padding: 30px;
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
     /* -------------------Fin Responsive Footer Diego ---------------------------  */
 }
 
 @media(max-width:574px) {
+    /* --------Navbar-------- */
+    .navbar-custom {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-custom a {
+        position: relative;
+        margin-left: 2rem;
+    }
+    .navbar-custom button {
+        position: absolute;
+        margin-left: 16rem;
+    }
     /* -------------------Responsive Footer Diego ---------------------------  */
+    .piePagina {
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
     .footer-section {
         width: 100%;
+    }
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
     /* -------------------Fin Responsive Footer Diego ---------------------------  */
 }

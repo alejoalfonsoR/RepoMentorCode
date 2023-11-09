@@ -172,7 +172,8 @@ iframe {
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
-    margin-left: 10px; }
+    margin-left: 10px;
+}
 
 
 /*---------------------------- Fin cursos------------------------- */
@@ -198,9 +199,9 @@ iframe {
     display: grid;
     gap: 1.5%;
     grid-template-columns: repeat(4, 1fr);
-    width: 70vw;
+    width: 65vw;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1rem 0;
 }
 
@@ -281,7 +282,7 @@ iframe {
     font-weight: 600;
     line-height: 2.2rem;
     padding-left: 0.6rem;
-    margin: 0;
+    margin: 0 0.3rem 1rem 0.5rem;
 }
 
 .center {
@@ -290,14 +291,16 @@ iframe {
 
 .button-cart {
     border: none;
-    width: 2.5rem;
-    height: 2.5rem;
+    /* width: 4rem;
+    height: 4rem; */
     background-image: url("../img/icons8-cart-32.png");
-    background-size: 1.875rem 1.875rem;
+    background-size: 2.4rem 2.4rem;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: white;
+    /* background-color: white; */
     display: inline-block;
+    margin: 0 0.5rem 1rem 0.2rem;
+    padding: 0;
 }
 
 
@@ -423,14 +426,49 @@ ul {
 /* ------------------- RESPONSIVE FOOTER DIEGO ---------------------------  */
 
 @media (max-width: 767px) {
+    .piePagina {
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .piePaginaContainer {
+        margin: 0;
+        padding: 0;
+        width: 100vw !important;
+    }
     .footer-section {
-        width: 50%;
-        margin-bottom: 30px;
-        padding: 30px;
+        margin: 1rem 0;
+    }
+    .footer-section img {
+        margin: 0 0;
+    }
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
 }
 
 @media (max-width: 574px) {
+    /* --------Navbar-------- */
+    .navbar-custom {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-custom a {
+        position: relative;
+        margin-left: 2rem;
+    }
+    .navbar-custom button {
+        position: absolute;
+        margin-left: 16rem;
+    }
     /* ----------------------Barra de busqueda---------------------- */
     .busqueda {
         /* border: 1px solid red !important; */
@@ -482,7 +520,23 @@ ul {
         transform: scale(1.03);
     }
     /* Fin Adaptacion de las cards a movile */
+    .piePagina {
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
     .footer-section {
         width: 100%;
+    }
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
 }
