@@ -42,7 +42,7 @@
 
 .mision_img {
     width: 40%;
-    height: auto;
+    height: 44%;
     border-radius: 20px;
 }
 
@@ -364,8 +364,8 @@ ul {
     .mision_img {
         margin-top: 1rem;
         margin-bottom: 2rem;
-        width: 75%;
-        height: auto;
+        width: 40%;
+        height: 34%;
     }
     .mision_texto {
         align-items: center;
@@ -373,7 +373,7 @@ ul {
         width: 90%;
         gap: 1rem;
         text-align: justify;
-        font-size: 1.1rem;
+        font-size: 0.6rem;
     }
     .revertir {
         display: flex;
@@ -390,11 +390,8 @@ ul {
     }
     .cards-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0rem;
-    }
-    .cards article:hover {
-        transform: none;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
     }
     .equipo {
         text-align: center;
@@ -406,38 +403,24 @@ ul {
         margin: 1rem 2rem;
     }
     .equipo__titulo__info {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 1rem 2rem;
     }
     .cards article {
         text-align: center;
-        width: 50vw;
-        margin: 0.8rem 0;
+        width: 100vw;
+        margin: 0.5rem 0;
         padding: 0;
         max-width: 100%;
     }
     .cards article img {
-        height: 55%;
-        width: 55%;
+        height: 60%;
+        width: 60%;
         margin-bottom: 1rem;
     }
     .cards article p {
         text-align: center;
         margin: 0;
-    }
-    /*Responsive formulario contacto*/
-    .container {
-        padding: 1rem 0;
-    }
-    .row__form input {
-        margin: 0 1rem;
-        padding: 0 0.5rem;
-        width: 98%;
-    }
-    .mensaje__form textarea {
-        margin: 0 1rem;
-        padding: 0 0.5rem;
-        width: 91%;
     }
 }
 
@@ -447,7 +430,7 @@ ul {
 
 /* -------------------Responsive Footer Diego ---------------------------  */
 
-@media(max-width:992px) {
+@media(max-width:767px) {
     .piePagina {
         height: auto;
         padding: 0;
@@ -490,59 +473,33 @@ ul {
 @media(max-width:574px) {
     /* --------Navbar-------- */
     .navbar-custom {
+        /* border: 1px solid red !important; */
         display: flex;
         align-items: center;
     }
     .navbar-custom a {
+        /* border: 1px solid red !important; */
         position: relative;
-        margin-left: 2rem;
+        width: 30rem;
     }
+    /* .navbar-custom img {
+        border: 1px solid red !important;
+    } */
     .navbar-custom button {
         position: absolute;
-        margin-left: 16rem;
+        margin-left: 18rem;
     }
     /* --------Mision Vision------------ */
     .titulo__nosotros {
         margin-top: 8rem;
         font-size: 2.5rem;
     }
-    .mision {
-        margin: 5rem auto 0rem;
-        padding: 1rem 0rem;
-        gap: auto;
-    }
-    .mision_img {
-        margin: 20rem auto 0rem;
-        width: 60%;
-        height: auto;
-        border-radius: 20px;
-    }
-    .mision_texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        height: auto;
-        width: 80%;
-        gap: 2.5rem;
-        text-align: justify;
-    }
     /* --------Nuestro Equipo------------ */
     .equipo__titulo {
         font-size: 2.5rem;
     }
     .cards article:hover {
-        transform: none;
-    }
-    .cards-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0rem;
-    }
-    .cards article img {
-        height: 60%;
-        width: 60%;
-        margin-bottom: 1rem;
+        transform: scale(1);
     }
     /* ------------------Responsive contacto ------------------*/
     .container {
