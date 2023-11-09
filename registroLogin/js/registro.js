@@ -35,7 +35,7 @@ datosRegistro.addEventListener('submit', async (e) =>{
             const errorMessage = await response.text(); 
             Swal.fire({
                 icon: 'error',
-                title: 'Error en el inicio de sesión',
+                title: 'Error en el registro',
                 text: errorMessage
             });
         }
@@ -47,26 +47,5 @@ datosRegistro.addEventListener('submit', async (e) =>{
                 title: 'Ocurrió un error en la solicitud'
             });
         }
-        
-
-    // //Variable que recibe usuarios registrados o en su defecto los crea
-    // const Users = JSON.parse(localStorage.getItem('users')) || []
-    
-    // const isUserRegistered = Users.find(user => user.email === email)
-
-    // if (isUserRegistered){
-    //     return alert ('El usuario ya esta registrado')
-    // }
-
-    // Users.push({
-    //     name: name,
-    //     email: email,
-    //     password: password
-    // })
-
-    // localStorage.setItem('users', JSON.stringify(Users))
-    // alert ('Registro Exitoso')
-
-    // window.location.href = '../login/login.html'
     
 });

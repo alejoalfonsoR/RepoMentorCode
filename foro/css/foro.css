@@ -45,6 +45,37 @@
 
 /* ---------------------- NAVBAR -------------------------- */
 
+/*-----------Etilos del Foro-------------------*/
+.foro-discord {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto; /* Altura de la pantalla */
+    padding-bottom: 1rem;
+    width: 100%;
+    margin: 0;
+}
+
+.titulo {
+    margin-bottom: 1rem; /* Espacio entre el título y el cuadro de Discord */
+}
+
+.widget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.widget-container widgetbot {
+    width: 80rem;
+    height: 60rem;
+}
+
+
+/*-------------Fin de estilos del foro ----------------------*/
+
 
 /* ----------------------FOOTER -------------------------- */
 
@@ -168,6 +199,10 @@ ul {
 @media(max-width:574px) {
     .footer-section {
         width: 100%;
+    }
+    .widget-container widgetbot {
+        width: 22rem;
+        height: 35rem;
     }
 }
 

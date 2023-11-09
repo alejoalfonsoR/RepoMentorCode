@@ -7,8 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Por ejemplo, puedes enviar una solicitud con estos datos para verificar si son válidos
         document.getElementById("contenido").style.display = "block";
     } else {
-        alert("No ha iniciado sesion, inicie")
-        // No hay datos de inicio de sesión almacenados, redirigir a la página de inicio de sesión
-        window.location.href = '../login/login.html';
+        Swal.fire({
+            icon: 'error',
+            title: 'Por favor inicia sesión para acceder al foro.',
+            showConfirmButton: true,
+                // Redirigir a la página de inicio de sesión
+        }).then(() => {
+            window.location.href = "../login/login.html";
+        });
     }
 });

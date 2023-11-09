@@ -117,6 +117,18 @@ const itemsPerPage = 8;
 let currentPage = 1;
 let filteredList = [];
 
+function mostrarAlerta() {
+            
+    Swal.fire({
+        icon: 'error',
+        title: 'Por favor inicia sesión para realizar la compra.',
+        showConfirmButton: true,
+            // Redirigir a la página de inicio de sesión
+    }).then(() => {
+        window.location.href = "../login/login.html";
+    });
+}
+
 function mapeoTarjetas() {
     const contenedorTarjetas = document.getElementById("tarjetaMentores");
     const paginationContainer = document.getElementById("pagination");
@@ -156,10 +168,12 @@ function mapeoTarjetas() {
                       maximumFractionDigits: 0
                     })}</span>
                 </h3>
-                <a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>
-                
+                ${localStorage.getItem("Email") && localStorage.getItem("Contrasena") ?
+                `<a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>` :
+                `<button class="button-cart" onclick="mostrarAlerta()"></button>`}
             </div>
             </article>`;
+            
 
 
             card.querySelector("a").addEventListener("click", (event) => {
@@ -187,6 +201,7 @@ function mapeoTarjetas() {
             });
             contenedorTarjetas.appendChild(card);
         }
+
 
         // contenedorTarjetas.appendChild(card);
         // Muestra u oculta el mensaje de búsqueda sin resultados

@@ -107,6 +107,18 @@ const itemsPerPage = 4;
 let currentPage = 1;
 let filteredList = [];
 
+function mostrarAlerta() {
+            
+    Swal.fire({
+        icon: 'error',
+        title: 'Por favor inicia sesión para realizar la compra.',
+        showConfirmButton: true,
+            // Redirigir a la página de inicio de sesión
+    }).then(() => {
+        window.location.href = "../login/login.html";
+    });
+}
+
 // Función principal para mapear y mostrar las tarjetas
 function mapeoTarjetas() {
     // Obtiene los elementos del DOM
@@ -150,7 +162,9 @@ function mapeoTarjetas() {
                             })}</span>
                         </h3>
                         <div class="center">
-                        <a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>            
+                        ${localStorage.getItem("Email") && localStorage.getItem("Contrasena") ?
+                        `<a href="${item.pago}" target="_blank"><button class="button-cart"></button></a>` :
+                        `<button class="button-cart" onclick="mostrarAlerta()"></button>`}            
                     </div>
                     </article>`;
 
