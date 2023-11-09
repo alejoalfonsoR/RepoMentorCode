@@ -100,9 +100,9 @@
     background-color: var(--azuloscuro);
     color: white;
     width:fit-content;
-    padding: 3%;
+    padding: 3% 6.5%;
     border-radius: 50px;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
  }
  .boton:hover {
     color:white; 
@@ -203,42 +203,67 @@ h2{
 
 }
 .cards {
+    /* border: 1px solid red !important; */
     justify-content: space-between;
     display: grid;
     gap: 2%;
     grid-template-columns: repeat(4, 1fr);
     width: 70vw;
-    height: 100%;
-    margin: 1rem auto 6rem;
+    height: auto;
+    margin: 0 auto 1rem;
+    padding: 1rem 0;
 }
 
 .cards article {
-    margin: 0.5rem;
     flex: 1;
-    border: var(--grismedio) 0.5px solid;
-    border-radius: 20px;
+    border: 0.063 solid #ccc;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+    /* border: 0.5px solid var(--grismedio);
+    border-radius: 20px; */
+    height: auto;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .cards article:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .cards article img {
     object-fit: cover;
     width: 100%;
-    height: 35vh;
+    height: 31vh;
     flex-shrink: 0;
     border-radius: 20px 20px 0px 0px;
-    padding-bottom: 1.3rem;
 }
 
 .cards p {
+    padding: 0 0.6rem;
+    margin: 0.4rem 0 0;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.nombre {
+    /* border: 1px solid red !important; */
+    /* height: 2.5rem; */
+    flex-shrink: 0;
     color: var(--azuloscuro);
     font-size: 1rem;
     font-style: normal;
     font-weight: bolder;
-    line-height: 0.5rem;
-    padding-left: 0.6rem;
+}
+
+.especialidad {
+    /* border: 1px solid red !important; */
+    /* margin: 0 0; */
+    /* height: 2.5rem; */
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--grisoscuro);
 }
 
 .cards h3 {
@@ -249,25 +274,66 @@ h2{
     font-weight: 600;
     line-height: 2.2rem;
     padding-left: 0.6rem;
+    margin: 0;
 }
 
 .center {
     text-align: center;
 }
+
 .boton2{
     text-align: center;
     background-color: var(--azuloscuro);
     color: white !important;
     width:fit-content;
-    padding: 3%;
+    padding: 2.5% 6% !important;
     border-radius: 50px;
-    font-size: 1.1vw;
-    margin-left: 0.5rem;
+    font-size: 1.1vw !important;
+    margin-left: 0.5rem !important;
     font-weight: 400 !important;
  }
  .boton2:hover {
     color:white; 
-    text-decoration:none; 
+    text-decoration:none !important; 
+}
+
+/*Sección de curso destacado*/
+.curso-destacado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.cursos{
+    width: auto;
+    height: auto;
+    border: 0.063 solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.cursos_contenedor__especialidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1rem 0;
+    height: 3rem;
+    flex-shrink: 0;
+    color: var(--azuloscuro);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.cursos_contenedor__creador {
+    margin: 0.1rem 0;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--grisoscuro);
 }
 
 /* ---------------------- MAIN -------------------------- */
