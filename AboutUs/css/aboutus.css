@@ -503,6 +503,7 @@ ul {
     }
     /* ------------------Responsive contacto ------------------*/
     .container {
+        width: 100vw;
         padding: 1rem 0;
     }
     .row__form input {
