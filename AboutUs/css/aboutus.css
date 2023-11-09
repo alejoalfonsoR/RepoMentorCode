@@ -490,21 +490,16 @@ ul {
 @media(max-width:574px) {
     /* --------Navbar-------- */
     .navbar-custom {
-        /* border: 1px solid red !important; */
         display: flex;
         align-items: center;
     }
     .navbar-custom a {
-        /* border: 1px solid red !important; */
         position: relative;
-        width: 30rem;
+        margin-left: 2rem;
     }
-    /* .navbar-custom img {
-        border: 1px solid red !important;
-    } */
     .navbar-custom button {
         position: absolute;
-        margin-left: 18rem;
+        margin-left: 16rem;
     }
     /* --------Mision Vision------------ */
     .titulo__nosotros {

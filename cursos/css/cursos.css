@@ -172,7 +172,8 @@ iframe {
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
-    margin-left: 10px; }
+    margin-left: 10px;
+}
 
 
 /*---------------------------- Fin cursos------------------------- */
@@ -453,6 +454,19 @@ ul {
 }
 
 @media (max-width: 574px) {
+    /* --------Navbar-------- */
+    .navbar-custom {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-custom a {
+        position: relative;
+        margin-left: 2rem;
+    }
+    .navbar-custom button {
+        position: absolute;
+        margin-left: 16rem;
+    }
     /* ----------------------Barra de busqueda---------------------- */
     .busqueda {
         /* border: 1px solid red !important; */

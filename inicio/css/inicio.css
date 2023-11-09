@@ -539,6 +539,20 @@ ul {
 }
 
 @media(max-width:574px) {
+    /* --------Navbar-------- */
+    .navbar-custom {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-custom a {
+        position: relative;
+        margin-left: 2rem;
+    }
+    .navbar-custom button {
+        position: absolute;
+        margin-left: 16rem;
+    }
+    /* ------------------------------------------ */
     .piePagina {
         height: auto;
         padding: 0;

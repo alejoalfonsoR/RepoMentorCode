@@ -120,7 +120,6 @@
     padding: 1rem 0;
 }
 
-
 .cards article {
     flex: 1;
     border: 0.063 solid #ccc;
@@ -201,7 +200,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
-    margin-left: 10px;}
+    margin-left: 10px;
+}
+
 
 /* Modal de nuestros mentores */
 
@@ -399,6 +400,19 @@ ul {
 }
 
 @media (max-width: 574px) {
+    /* --------Navbar-------- */
+    .navbar-custom {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-custom a {
+        position: relative;
+        margin-left: 2rem;
+    }
+    .navbar-custom button {
+        position: absolute;
+        margin-left: 16rem;
+    }
     /* ----------------------Barra de busqueda---------------------- */
     .equipo__titulo {
         margin-top: 7.5rem;
