@@ -48,6 +48,7 @@
 
 /* ---------------------- MAIN -------------------------- */
 
+
 /*Primer banner*/
 
 .inicio-flex {
@@ -72,7 +73,7 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.izquierda{
+.izquierda {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,18 +85,19 @@
     padding: 3% 5%;
 }
 
-.izquierda h1{
+.izquierda h1 {
     color: var(--azuloscuro);
     font-weight: 700;
     text-align: center;
     font-size: 2vw;
 }
 
-.parrafo1{
+.parrafo1 {
     text-align: center;
     font-size: 1.1vw;
 }
- .boton{
+
+.boton {
     text-align: center;
     background-color: var(--azuloscuro);
     color: white;
@@ -110,10 +112,16 @@
     text-decoration:none; 
 }
 
- .derecha{
+.boton:hover {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.derecha {
     width: 40%;
     object-fit: contain;
- }
+}
 
 .segunda {
     width: 75vw;
@@ -124,7 +132,9 @@
     width: 75vw;
 }
 
+
 /*Banner que cambia de imágenes*/
+
 .banner {
     width: 100%;
     height: 27vw;
@@ -134,14 +144,16 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Oculta los radio buttons */
+
 .banner input[type="radio"] {
     display: none;
 }
 
 .banner-container {
     display: flex;
-    width: 400%; 
+    width: 400%;
     animation: banner 10s infinite linear;
 }
 
@@ -179,29 +191,53 @@
     transition: background 0.3s;
 }
 
-#radio1:checked ~ .banner-container { margin-left: 0; }
-#radio2:checked ~ .banner-container { margin-left: -100%; }
-#radio3:checked ~ .banner-container { margin-left: -200%; }
-#radio4:checked ~ .banner-container { margin-left: -300%; }
-#radio1:checked ~ .radio-labels label:nth-child(1) { background: #333; }
-#radio2:checked ~ .radio-labels label:nth-child(2) { background: #333; }
-#radio3:checked ~ .radio-labels label:nth-child(3) { background: #333; }
-#radio4:checked ~ .radio-labels label:nth-child(4) { background: #333; }
+#radio1:checked~.banner-container {
+    margin-left: 0;
+}
+
+#radio2:checked~.banner-container {
+    margin-left: -100%;
+}
+
+#radio3:checked~.banner-container {
+    margin-left: -200%;
+}
+
+#radio4:checked~.banner-container {
+    margin-left: -300%;
+}
+
+#radio1:checked~.radio-labels label:nth-child(1) {
+    background: #333;
+}
+
+#radio2:checked~.radio-labels label:nth-child(2) {
+    background: #333;
+}
+
+#radio3:checked~.radio-labels label:nth-child(3) {
+    background: #333;
+}
+
+#radio4:checked~.radio-labels label:nth-child(4) {
+    background: #333;
+}
+
 
 /*Sección de mentores destacados*/
 
-.mentores-del-mes{
+.mentores-del-mes {
     margin-top: 4rem;
 }
 
-h2{
+h2 {
     text-align: center;
     font-weight: 700 !important;
     margin-bottom: 2rem;
     color: var(--grisoscuro);
     font-size: 1.5rem !important;
-
 }
+
 .cards {
     /* border: 1px solid red !important; */
     justify-content: space-between;
@@ -336,6 +372,12 @@ h2{
     color: var(--grisoscuro);
 }
 
+.boton2:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
 /* ---------------------- MAIN -------------------------- */
 
 
@@ -443,16 +485,38 @@ ul {
 /* -------------------Responsive Footer Diego ---------------------------  */
 
 @media(max-width:767px) {
-    .footer-section {
-        width: 50%;
-        margin: bottom 30px;
-        padding: 30px;
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
 }
 
 @media(max-width:574px) {
+    .piePagina {
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
     .footer-section {
         width: 100%;
+    }
+    .footer-section ul p:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section ul li a:hover {
+        color: #bbbbbb;
+        padding-left: 0;
+    }
+    .footer-section .social-links a:hover {
+        padding-left: 0;
     }
 }
 

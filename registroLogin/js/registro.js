@@ -23,7 +23,7 @@ datosRegistro.addEventListener('submit', async (e) =>{
         });
 
         if (response.ok) {
-            // Mensaje de solicitud exitosa
+
             Swal.fire({
                 icon: 'success',
                 title: 'Registro Exitoso',
@@ -32,7 +32,7 @@ datosRegistro.addEventListener('submit', async (e) =>{
                 window.location.href = '../login/login.html';
             });
         } else {
-            const errorMessage = await response.text(); // Obtén el mensaje de error del servidor
+            const errorMessage = await response.text(); 
             Swal.fire({
                 icon: 'error',
                 title: 'Error en el inicio de sesión',
