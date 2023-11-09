@@ -1,6 +1,6 @@
 const datosIngreso = document.querySelector("#formularioMentores");
 
-datosIngreso.addEventListener('submit', async (e) => {
+datosIngreso.addEventListener('submit', async(e) => {
     e.preventDefault();
     const Email = document.querySelector('#email').value;
     const Contrasena = document.querySelector('#password').value;
@@ -18,9 +18,9 @@ datosIngreso.addEventListener('submit', async (e) => {
             },
             body: JSON.stringify(requestBody),
         });
-    
+
         if (response.ok) {
-            
+
             localStorage.setItem('Email', Email);
             localStorage.setItem('Contrasena', Contrasena);
 
@@ -28,12 +28,12 @@ datosIngreso.addEventListener('submit', async (e) => {
                 icon: 'success',
                 title: 'Inicio de sesión exitoso',
                 showConfirmButton: false,
-                timer: 1500 
+                timer: 1500
             }).then(() => {
-                window.location.href = '../inicio/inicio.html';
+                window.location.href = '../index.html';
             });
         } else {
-            const errorMessage = await response.text(); 
+            const errorMessage = await response.text();
             Swal.fire({
                 icon: 'error',
                 title: 'Error en el inicio de sesión',
@@ -45,4 +45,5 @@ datosIngreso.addEventListener('submit', async (e) => {
             icon: 'error',
             title: 'Ocurrió un error en la solicitud'
         });
-    }})
+    }
+})
