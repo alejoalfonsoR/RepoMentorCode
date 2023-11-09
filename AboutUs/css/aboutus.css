@@ -365,7 +365,7 @@ ul {
         margin-top: 1rem;
         margin-bottom: 2rem;
         width: 75%;
-        height: auto%;
+        height: auto;
     }
     .mision_texto {
         align-items: center;
@@ -511,14 +511,12 @@ ul {
         padding: 1rem 0rem;
         gap: auto;
     }
-    
     .mision_img {
         margin: 20rem auto 0rem;
         width: 60%;
         height: auto;
         border-radius: 20px;
     }
-    
     .mision_texto {
         display: flex;
         flex-direction: column;
@@ -541,7 +539,6 @@ ul {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0rem;
     }
-
     .cards article img {
         height: 60%;
         width: 60%;
