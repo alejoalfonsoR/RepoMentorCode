@@ -44,8 +44,17 @@
 
 
 /* ---------------------- NAVBAR -------------------------- */
-
-
+/*Main*/
+.contenedor-ppal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+.equipo__titulo{
+    margin-top: 2rem;
+    color: var(--azuloscuro);
+}
 /* ----------------------FOOTER -------------------------- */
 
 .piePaginaContainer {
